@@ -4,7 +4,6 @@ layoutdir     = "layouts"
 publishdir    = "public"
 title = "BuyMyMojo"
 copyright = "© BuyMyMojo"
-canonifyurls  = true
 
 DefaultContentLanguage = "en"
 theme = "archie"

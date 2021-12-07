@@ -8,8 +8,12 @@ copyright = "© BuyMyMojo"
 DefaultContentLanguage = "en"
 theme = "archie"
 metaDataFormat = "yaml"
-pygmentsUseClasses = true
-pygmentCodeFences = true
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginate=2
 
 [Author]
 name = "Owen Quinlan"

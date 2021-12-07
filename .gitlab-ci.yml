@@ -12,7 +12,8 @@ test:
 
 pages:
   script:
-  - echo "test"
+  - var='baseurl = "https://buymymojo.gitlab.io/buymymojo-hugo/"'
+  - sed -i "1s/.*/$var/" config.toml
   - hugo
   artifacts:
     paths:

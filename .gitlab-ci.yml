@@ -12,6 +12,7 @@ test:
 
 pages:
   script:
+  - echo "test"
   - hugo
   artifacts:
     paths:

@@ -12,8 +12,7 @@ test:
 
 pages:
   script:
-  - export new_header='baseurl = "https://buymymojo.gitlab.io/buymymojo-hugo/"'
-  - sed -i.bak '1 s/.*/$new_header/' config.toml
+  - sed -i.bak '1 s/.*/baseurl = "https://buymymojo.gitlab.io/buymymojo-hugo/"/' config.toml
   - cat config.toml
   - hugo
   artifacts:

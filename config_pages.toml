@@ -45,6 +45,11 @@ icon = "github"
 url = "https://github.com/BuyMyMojo/"
 
 [[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/OwenQuinlan7/"
+
+[[params.social]]
 name = "GitLab"
 icon = "gitlab"
 url = "https://gitlab.com/BuyMyMojo/"

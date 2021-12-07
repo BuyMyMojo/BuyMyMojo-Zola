@@ -2,11 +2,11 @@ baseurl = "https://pages.gitlab.io/hugo/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Beautiful Hugo"
+title = "BuyMyMojo"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
-theme = "beautifulhugo"
+theme = "archie"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
@@ -34,25 +34,12 @@ pygmentCodeFences = true
 #  desc = "Hexagon"
 
 [Author]
-  name = "Some Person"
-  email = "youremail@domain.com"
-  facebook = "username"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  gitlab = "username"
-  github = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  keybase = "username"
+  name = "Owen Quinlan"
+  email = "hello@buymymojo.net"
+  gitlab = "BuyMyMojo"
+  github = "BuyMyMojo"
+  linkedin = "owen-quinlan-b6b6431b7"
+  keybase = "bmmojo"
 
 
 [[menu.main]]

@@ -6,7 +6,7 @@ variables:
 
 test:
   script:
-  - hugo
+  - hugo --config config_pages.toml
   except:
   - master
 

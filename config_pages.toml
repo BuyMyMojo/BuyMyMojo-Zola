@@ -13,7 +13,6 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-enableGitInfo = true
 enableEmoji = true
 enableRobotsTXT = true
 

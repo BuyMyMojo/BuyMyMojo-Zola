@@ -74,9 +74,3 @@ weight = 3
 name = "Tags"
 url = "tags"
 weight = 4
-
-[[redirects]]
-force = false
-from = '/github/**'
-status = 200
-to = 'https://github.com/BuyMyMojo/'

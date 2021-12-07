@@ -14,6 +14,7 @@ pages:
   script:
   - var='new_header = "https://buymymojo.gitlab.io/buymymojo-hugo/"'
   - sed -i.bak "1 s/.*/$new_header/" config.toml
+  - cat config.toml
   - hugo
   artifacts:
     paths:

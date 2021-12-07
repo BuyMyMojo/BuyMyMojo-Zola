@@ -12,7 +12,7 @@ test:
 
 pages:
   script:
-  - hugo --config config_pages.toml
+  - hugo --config config_pages.toml --minify
   artifacts:
     paths:
     - public

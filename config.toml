@@ -3,6 +3,7 @@ contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 title = "BuyMyMojo"
+copyright = "© BuyMyMojo"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
@@ -14,13 +15,15 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "Hugo Blog Template for GitLab Pages"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = true
-  comments = true
+    mode="toggle" # color-mode → light,dark,toggle or auto
+	useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
+    subtitle = "Hugo Blog Template for GitLab Pages"
+    logo = "img/avatar-icon.png"
+    favicon = "img/favicon.ico"
+    dateFormat = "January 2, 2006"
+    commit = false
+    rss = true
+    comments = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 #[[Params.bigimg]]
@@ -34,12 +37,12 @@ pygmentCodeFences = true
 #  desc = "Hexagon"
 
 [Author]
-  name = "Owen Quinlan"
-  email = "hello@buymymojo.net"
-  gitlab = "BuyMyMojo"
-  github = "BuyMyMojo"
-  linkedin = "owen-quinlan-b6b6431b7"
-  keybase = "bmmojo"
+    name = "Owen Quinlan"
+    email = "hello@buymymojo.net"
+    gitlab = "BuyMyMojo"
+    github = "BuyMyMojo"
+    linkedin = "owen-quinlan-b6b6431b7"
+    keybase = "bmmojo"
 
 
 [[menu.main]]

@@ -12,9 +12,7 @@ test:
 
 pages:
   script:
-  - sed -i.bak '1 s/.*/baseurl = "https://buymymojo.gitlab.io/buymymojo-hugo/"/' config.toml
-  - cat config.toml
-  - hugo
+  - hugo --config config_pages.toml
   artifacts:
     paths:
     - public

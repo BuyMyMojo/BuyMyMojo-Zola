@@ -12,6 +12,14 @@ metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 
+[Author]
+name = "Owen Quinlan"
+email = "hello@buymymojo.net"
+gitlab = "BuyMyMojo"
+github = "BuyMyMojo"
+linkedin = "owen-quinlan-b6b6431b7"
+keybase = "bmmojo"
+
 [Params]
     mode="dark" # color-mode → light,dark,toggle or auto
 	useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
@@ -23,42 +31,33 @@ pygmentCodeFences = true
     rss = true
     comments = true
 
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/BuyMyMojo/"
 
 [[params.social]]
-    name = "GitHub"
-    icon = "github"
-    url = "https://github.com/BuyMyMojo/"
-
-[[params.social]]
-    name = "GitLab"
-    icon = "gitlab"
-    url = "https://gitlab.com/BuyMyMojo/"
-
-[Author]
-    name = "Owen Quinlan"
-    email = "hello@buymymojo.net"
-    gitlab = "BuyMyMojo"
-    github = "BuyMyMojo"
-    linkedin = "owen-quinlan-b6b6431b7"
-    keybase = "bmmojo"
+name = "GitLab"
+icon = "gitlab"
+url = "https://gitlab.com/BuyMyMojo/"
 
 
 [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+name = "Home"
+url = "/"
+weight = 1
 
 [[menu.main]]
-    name = "All posts"
-    url = "/posts"
-    weight = 2
+name = "All posts"
+url = "/posts"
+weight = 2
 
 [[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 3
+name = "About"
+url = "page/about/"
+weight = 3
 
 [[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 4
+name = "Tags"
+url = "tags"
+weight = 4

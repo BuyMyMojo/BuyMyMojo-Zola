@@ -2,7 +2,7 @@
 title: About me
 subtitle: Why you'd want to hang out with me
 comments: true
-publishDate: "2021-12-9T3:55:00+10:00"
+date: 2021-12-9T3:55:00+10:00
 ---
 
 

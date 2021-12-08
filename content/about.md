@@ -1,8 +1,8 @@
 ---
 title: "About me"
 description: "Why you'd want to hang out with me"
-comments: true
 date: 2021-12-09
+comments: true
 aliases: ["about-us","about-me","about"]
 author: "Owen Quinlan"
 ---

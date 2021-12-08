@@ -75,7 +75,7 @@ weight = 2
 [[menu.main]]
 name = "about"
 title = "About"
-url = "about/"
+url = "/about"
 weight = 3
 
 [[menu.main]]

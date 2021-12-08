@@ -1,3 +1,7 @@
++++
+author = "BuyMyMojo"
++++
+
 ## Front Page Content
 
 This website is powered by [GitLab Pages](https://about.gitlab.com/features/pages/)

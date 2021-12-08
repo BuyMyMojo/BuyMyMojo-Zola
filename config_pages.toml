@@ -6,29 +6,29 @@ copyright = "© BuyMyMojo"
 
 languageCode = "en-us"
 theme = "archie"
-# metaDataFormat = "yaml"
+metaDataFormat = "yaml"
 
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-# enableEmoji = true
-# enableRobotsTXT = true
+enableEmoji = true
+enableRobotsTXT = true
 
 paginate=4
 
-# [Author]
-# name = "Owen Quinlan"
-# email = "hello@buymymojo.net"
-# gitlab = "BuyMyMojo"
-# github = "BuyMyMojo"
-# linkedin = "owen-quinlan-b6b6431b7"
-# keybase = "bmmojo"
+[Author]
+name = "Owen Quinlan"
+email = "hello@buymymojo.net"
+gitlab = "BuyMyMojo"
+github = "BuyMyMojo"
+linkedin = "owen-quinlan-b6b6431b7"
+keybase = "bmmojo"
 
-# [sitemap]
-#     changefreq = 'daily'
-#     filename = 'sitemap.xml'
-#     priority = 0.5
+[sitemap]
+    changefreq = 'daily'
+    filename = 'sitemap.xml'
+    priority = 0.5
 
 [Params]
 	mode="dark"
@@ -53,9 +53,9 @@ name = "GitLab"
 icon = "gitlab"
 url = "https://gitlab.com/BuyMyMojo/"
 
-# [permalinks]
-#   posts = "/posts/:year/:month/:day/:slug/"
-#   tags = "/tags/:title/"
+[permalinks]
+  posts = "/posts/:year/:month/:day/:slug/"
+  tags = "/tags/:title/"
 
 
 

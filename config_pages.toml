@@ -55,23 +55,31 @@ name = "GitLab"
 icon = "gitlab"
 url = "https://gitlab.com/BuyMyMojo/"
 
+[permalinks]
+  posts = "/posts/:year/:month/:day/:slug/"
+  tags = "/tags/:title/"
+
+
 
 [[menu.main]]
-name = "Home"
+name = "home"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
+name = "all posts"
+title = "All Posts"
 url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "About"
+name = "about"
+title = "About"
 url = "page/about/"
 weight = 3
 
 [[menu.main]]
-name = "Tags"
+name = "tags"
+title = "Tags"
 url = "tags"
 weight = 4

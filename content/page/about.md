@@ -4,17 +4,23 @@ subtitle: Why you'd want to hang out with me
 comments: true
 ---
 
+
 My name is Owen Quinlan or BuyMyMojo.
 
+
 I'm a software developer that uses these languages:
+
 
    - Python
    - Golang
    - Rust
 
+
 ### my history
 
+
 History? I havn't done anything yet! so go check out my Projects:
+
 
    - [Go-static](https://gitlab.com/BuyMyMojo/go-static) a tv static generator writen in Go
    - [Discord timestamp bot](https://gitlab.com/BuyMyMojo/discord-timestamp-bot) a bot that creates timestamps for discord, written in Python

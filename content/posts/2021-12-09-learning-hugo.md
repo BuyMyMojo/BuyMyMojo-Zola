@@ -4,11 +4,11 @@ description: HUGO is an interesting tool.
 tags: [learning, open-source, hugo]
 date: 2021-12-09T17:16:00+11:00
 slug: learning-hugo
-image: /img/vendor/hugo.svg
+image: /img/vendor/hugo.png
 draft: true
 ---
 
-![HUGO logo](/img/vendor/hugo.png)
+![HUGO logo](https://buymymojo.gitlab.io/buymymojo-hugo/img/vendor/hugo.png)
 
 ## Learning HUGO was interesting
 

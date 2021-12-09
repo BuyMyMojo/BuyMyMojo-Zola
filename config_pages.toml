@@ -1,4 +1,4 @@
-baseurl = "https://buymymojo.gitlab.io/buymymojo-hugo/"
+baseurl = "https://wip.buymymojo.net/"
 contentdir    = "content"
 publishdir    = "public"
 title = "BuyMyMojo"

@@ -5,6 +5,7 @@ tags: [learning, open-source, hugo]
 date: 2021-12-09T17:16:00+11:00
 slug: learning-hugo
 image: /img/vendor/hugo.png
+draft: true
 ---
 
 ## Learning HUGO was interesting

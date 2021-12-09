@@ -1,7 +1,7 @@
 ---
 title: About me
 description: Why you'd want to hang out with me
-date: 2021-12-08T21:00:00.000Z
+date: 2021-12-09T17:16:00+11:00
 comments: true
 aliases: [about-us, about-me, about]
 author: Owen Quinlan

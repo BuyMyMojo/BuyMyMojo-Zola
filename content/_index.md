@@ -1,3 +1,4 @@
 +++
 author = "BuyMyMojo"
+headless = true
 +++

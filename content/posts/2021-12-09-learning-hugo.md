@@ -8,6 +8,8 @@ image: /img/vendor/hugo.svg
 draft: true
 ---
 
+![HUGO logo](/img/vendor/hugo.png)
+
 ## Learning HUGO was interesting
 
 So right off the bat I decided to make something [less then normal](https://shell.buymymojo.net/) to learn some basics and it was pretty fun, I then moved to actually learning how to create this main website.
@@ -35,3 +37,5 @@ image: /img/vendor/hugo.png
 ```
 
 Pretty simple right?
+
+Go check out the source for this website [here](https://gitlab.com/BuyMyMojo/buymymojo-hugo) and the theme [here](https://github.com/athul/archie)

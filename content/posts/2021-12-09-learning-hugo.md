@@ -8,7 +8,25 @@ image: /img/vendor/hugo.svg
 draft: true
 ---
 
-![HUGO logo](https://buymymojo.gitlab.io/buymymojo-hugo/img/vendor/hugo.svg)
+<!-- Open Graph stuff -->
+<!-- 
+<meta property="og:title" content="Learning HUGO">
+<meta property="og:site_name" content="BuyMyMojo">
+<meta property="og:url" content="https://buymymojo.gitlab.io/buymymojo-hugo/posts/2021/12/09/learning-hugo/">
+<meta property="og:description" content="I spent some time learning HUGO and it was pretty interesting!">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://wip.buymymojo.net/img/vendor/hugo.svg">
+-->
+
+<!-- Twitter share card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@OwenQuinlan7">
+<meta name="twitter:title" content="Learning HUGO">
+<meta name="twitter:description" content="I spent some time learning HUGO and it was pretty interesting!">
+<meta name="twitter:image" content="https://wip.buymymojo.net/img/vendor/hugo.svg">
+
+
+![HUGO logo](/img/vendor/hugo.svg)
 
 ## Learning HUGO was interesting
 

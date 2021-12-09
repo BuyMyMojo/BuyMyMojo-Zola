@@ -41,8 +41,8 @@ Pretty simple right?
 
 Adding an image to the preview render has been a pain in my butt :triumph:
 
-![Preview of Facebook share](/img/screencaps/share-preview-20211209-1912.png)
-![Preview of Twitter share](/img/screencaps/share-preview-20211209-1913.png)
+![Preview of Facebook share](/img/screencaps/share-preview-20211209-1912.webp)
+![Preview of Twitter share](/img/screencaps/share-preview-20211209-1913.webp)
 
 The theme in use on this website provides the ability to have Open Graph tags for each page, a slight issue is that it only allows you to use global image instead of an image for each specific post which is kinda sad.
 

@@ -4,7 +4,7 @@ description: HUGO is an interesting tool.
 tags: [learning, open-source, hugo]
 date: 2021-12-09T17:16:00+11:00
 slug: learning-hugo
-image: /img/vendor/hugo.png
+image: /img/vendor/hugo.svg
 draft: true
 ---
 
@@ -37,5 +37,10 @@ image: /img/vendor/hugo.svg
 ```
 
 Pretty simple right?
+
+![Preview of Facebook share](/img/screencaps/SharePreview-20211209-191200.png)
+![Preview of Twitter share](/img/screencaps/SharePreview-20211209-191348.png)
+
+Adding an image to the preview render has been a pain in my butt :triumph:
 
 Go check out the source for this website [here](https://gitlab.com/BuyMyMojo/buymymojo-hugo) and the theme [here](https://github.com/athul/archie)

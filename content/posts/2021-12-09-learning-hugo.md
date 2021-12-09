@@ -4,27 +4,9 @@ description: HUGO is an interesting tool.
 tags: [learning, open-source, hugo]
 date: 2021-12-09T17:16:00+11:00
 slug: learning-hugo
-image: /img/vendor/hugo.svg
+og_image: /img/vendor/hugo.svg
 draft: true
 ---
-
-<!-- Open Graph stuff -->
-<!-- 
-<meta property="og:title" content="Learning HUGO">
-<meta property="og:site_name" content="BuyMyMojo">
-<meta property="og:url" content="https://buymymojo.gitlab.io/buymymojo-hugo/posts/2021/12/09/learning-hugo/">
-<meta property="og:description" content="I spent some time learning HUGO and it was pretty interesting!">
-<meta property="og:type" content="article">
-<meta property="og:image" content="https://wip.buymymojo.net/img/vendor/hugo.svg">
--->
-
-<!-- Twitter share card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@OwenQuinlan7">
-<meta name="twitter:title" content="Learning HUGO">
-<meta name="twitter:description" content="I spent some time learning HUGO and it was pretty interesting!">
-<meta name="twitter:image" content="https://wip.buymymojo.net/img/vendor/hugo.svg">
-
 
 ![HUGO logo](/img/vendor/hugo.svg)
 

@@ -59,4 +59,40 @@ I'm going to put a request into the theme's repo for support for a per post imag
 
 In this theme if there is a folder `/pages` and a folder `/posts` it will only display the posts inside of `/pages` on the front page, if you remove it then it shows the files in `/pages` so I've moved to only using the pages folder
 
+So the current strcture is:
+
+```
+buymymojo-hugo/
+├── archtypes/
+│   └── default.md
+├── content/
+│   └── posts/
+│       ├── 2021-12-09-learning-hugo.md
+│       └── about.md
+├── static/
+│   ├── img/
+│   │   ├── screencaps/
+│   │   │   ├── share-preview-20211209-1912.png
+│   │   │   └── share-preview-20211209-191348.png
+│   │   ├── vendor/
+│   │   │   ├── hugo.png
+│   │   │   └── hugo.svg
+│   │   └── og-image.png
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── apple-touch-icon.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   └── site.webmanifest
+├── themes/
+│   └── archie
+├── .gitignore
+├── .gitlab-ci.yml
+├── config_pages.toml
+├── config.toml
+├── LICENSE
+└── README.md
+```
+
 Go check out the source for this website [here](https://gitlab.com/BuyMyMojo/buymymojo-hugo) and the theme [here](https://github.com/athul/archie)

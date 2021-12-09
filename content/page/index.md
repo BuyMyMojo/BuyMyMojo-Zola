@@ -1,5 +1,4 @@
 ---
-headless : false
 author: BuyMyMojo
 ---
 

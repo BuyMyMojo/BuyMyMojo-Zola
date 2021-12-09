@@ -38,9 +38,20 @@ image: /img/vendor/hugo.svg
 
 Pretty simple right?
 
+Adding an image to the preview render has been a pain in my butt :triumph:
+
 ![Preview of Facebook share](/img/screencaps/share-preview-20211209-1912.png)
 ![Preview of Twitter share](/img/screencaps/share-preview-20211209-1913.png)
 
-Adding an image to the preview render has been a pain in my butt :triumph:
+The theme in use on this website provides the ability to have Open Graph tags for each page, a slight issue is that it only allows you to use global image instead of an image for each specific post which is kinda sad.
+
+In order to have the image above (Art by [Weaves](https://twitter.com/Weaveasy)) I had to set a global image inside of my HUGO config file:
+
+```toml
+[Params]
+    og_image = "https://wip.buymymojo.net/img/og-image.png"
+```
+
+I'm going to put a request into the theme's repo for support for a per post image but ofc if it doesnt add it that's fine. It's an open source theme for an open source tool, if I eventually learn HUGO more intametly I will make my own fork and link it here!
 
 Go check out the source for this website [here](https://gitlab.com/BuyMyMojo/buymymojo-hugo) and the theme [here](https://github.com/athul/archie)

@@ -38,8 +38,8 @@ image: /img/vendor/hugo.svg
 
 Pretty simple right?
 
-![Preview of Facebook share](/img/screencaps/share-preview-20211209-191200.png)
-![Preview of Twitter share](/img/screencaps/share-preview-20211209-191348.png)
+![Preview of Facebook share](/img/screencaps/share-preview-20211209-1912.png)
+![Preview of Twitter share](/img/screencaps/share-preview-20211209-1913.png)
 
 Adding an image to the preview render has been a pain in my butt :triumph:
 

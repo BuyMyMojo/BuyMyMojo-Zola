@@ -16,7 +16,7 @@ So right off the bat I decided to make something [less then normal](https://shel
 
 ### Dates are weird
 
-A major issue I had while making this very page was adding a date, I tried to give it the date `2021-12-09T17:16:00` which was the exact time I started to write the page after consulting [Heap]() about the date issue, They informed me I cannot make dates that are in the future.
+A major issue I had while making this very page was adding a date, I tried to give it the date `2021-12-09T17:16:00` which was the exact time I started to write the page after consulting [Heap](https://gitlab.com/HeapUnderflow) about the date issue, They informed me I cannot make dates that are in the future.
 
 I'm Australian so all my dates are in the futue, I have the UTC offset of +10 but even setting the offset to that `2021-12-09T17:16:00+10:00` it would still have an issue and not appear on my page, AS IT TURNS OUT I need to tell it I'm half way between east australia and New Zealand and set my UTC offset to +11 `2021-12-09T17:16:00+11:00`
 

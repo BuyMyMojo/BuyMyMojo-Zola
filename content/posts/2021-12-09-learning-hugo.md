@@ -55,4 +55,8 @@ In order to have the image above (Art by [Weaves](https://twitter.com/Weaveasy))
 
 I'm going to put a request into the theme's repo for support for a per post image but ofc if it doesnt add it that's fine. It's an open source theme for an open source tool, if I eventually learn HUGO more intametly I will make my own fork and link it here!
 
+#### One final hiccup
+
+In this theme if there is a folder `/pages` and a folder `/posts` it will only display the posts inside of `/pages` on the front page, if you remove it then it shows the files in `/pages` so I've moved to only using the pages folder
+
 Go check out the source for this website [here](https://gitlab.com/BuyMyMojo/buymymojo-hugo) and the theme [here](https://github.com/athul/archie)

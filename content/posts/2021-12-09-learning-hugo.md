@@ -1,13 +1,10 @@
 ---
 title: Learning HUGO
 description: HUGO is an interesting tool.
-tags:
-- learning
-- open-source
-- code
-date: 2021-12-09T17:16:00+11:00
+tags: [learning, open-source, code]
+date: 2021-12-09T06:16:00.000Z
 slug: learning-hugo
-# image: /img/vendor/fosdem-gear.png
+image: /img/vendor/hugo.svg
 ---
 
 ## Learning HUGO was interesting
@@ -32,7 +29,10 @@ tags:
 - code
 date: 2021-12-09T17:16:00+11:00
 slug: learning-hugo
+image: /img/vendor/hugo.svg
 ---
 ```
 
 Pretty simple right?
+
+

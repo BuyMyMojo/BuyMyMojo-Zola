@@ -1,31 +1,26 @@
 ---
-title: "About me"
-description: "Why you'd want to hang out with me"
-date: 2021-12-09T08:00:00+11:00
+title: About me
+description: Why you'd want to hang out with me
+date: 2021-12-08T21:00:00.000Z
 comments: true
-aliases: ["about-us","about-me","about"]
-author: "Owen Quinlan"
+aliases: [about-us, about-me, about]
+author: Owen Quinlan
 ---
 
 My name is Owen Quinlan or BuyMyMojo.
 
-
 I'm a software developer that uses these languages:
 
-
-   * Python
-   * Golang
-   * Rust
-
+-   Python
+-   Golang
+-   Rust
 
 ### my history
 
-
 History? I havn't done anything yet! so go check out my Projects:
 
-
-   * [Go-static](https://gitlab.com/BuyMyMojo/go-static) a tv static generator writen in Go
-   * [Discord timestamp bot](https://gitlab.com/BuyMyMojo/discord-timestamp-bot) a bot that creates timestamps for discord, written in Python
-   * [Discord chat parser](https://gitlab.com/BuyMyMojo/discord-chat-parser) a tool for parsing the json output of [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) for specific uses, written in Python and then rewritten in Go
-   * [Image Based EAX](https://gitlab.com/BuyMyMojo/Image-Based-EAX) a discord bot that does image manipulation, written in Python
-   * A very WIP [animated fps graph generator](https://gitlab.com/BuyMyMojo/Video-FPS-overlay) written in Python
+-   [Go-static](https://gitlab.com/BuyMyMojo/go-static) a tv static generator writen in Go
+-   [Discord timestamp bot](https://gitlab.com/BuyMyMojo/discord-timestamp-bot) a bot that creates timestamps for discord, written in Python
+-   [Discord chat parser](https://gitlab.com/BuyMyMojo/discord-chat-parser) a tool for parsing the json output of [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) for specific uses, written in Python and then rewritten in Go
+-   [Image Based EAX](https://gitlab.com/BuyMyMojo/Image-Based-EAX) a discord bot that does image manipulation, written in Python
+-   A very WIP [animated fps graph generator](https://gitlab.com/BuyMyMojo/Video-FPS-overlay) written in Python

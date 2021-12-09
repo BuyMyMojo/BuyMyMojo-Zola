@@ -9,7 +9,13 @@ author: "Owen Quinlan"
 draft: false
 ---
 
-![HUGO logo](/img/vendor/hugo.svg)
+{{< rawhtml >}}
+<picture>
+    <source type="image/jxl" srcset="/img/vendor/hugo_small.jxl" style="width: 100%;">
+    <source type="image/webp" srcset="/img/vendor/hugo_small.webp" style="width: 100%;">
+    <img src="/img/vendor/hugo_small.png" alt="HUGO logo" style="width: 100%;">
+</picture>
+{{< /rawhtml >}}
 
 ## #Learning HUGO was interesting
 
@@ -41,8 +47,21 @@ Pretty simple right?
 
 Adding an image to the preview render has been a pain in my butt :triumph:
 
-![Preview of Facebook share](/img/screencaps/share-preview-20211209-1912.webp)
-![Preview of Twitter share](/img/screencaps/share-preview-20211209-1913.webp)
+{{< rawhtml >}}
+<picture>
+    <source type="image/jxl" srcset="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.jxl" style="width: 100%;">
+    <source type="image/webp" srcset="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.webp" style="width: 100%;">
+    <img src="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.png" alt="Preview of Facebook share" style="width: 100%;">
+</picture>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<picture>
+    <source type="image/jxl" srcset="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.jxl" style="width: 100%;">
+    <source type="image/webp" srcset="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.webp" style="width: 100%;">
+    <img src="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.png" alt="Preview of Twitter share" style="width: 100%;">
+</picture>
+{{< /rawhtml >}}
 
 The theme in use on this website provides the ability to have Open Graph tags for each page, a slight issue is that it only allows you to use global image instead of an image for each specific post which is kinda sad.
 
@@ -95,4 +114,10 @@ buymymojo-hugo/
 └── README.md
 ```
 
-Go check out the source for this website [here](https://gitlab.com/BuyMyMojo/buymymojo-hugo) and the theme [here](https://github.com/athul/archie)
+Go check out the [source for this website](https://gitlab.com/BuyMyMojo/buymymojo-hugo) and the [theme used here](https://github.com/athul/archie)
+
+{{< rawhtml >}}
+<sub>
+<p>Credit to <a href="https://anaulin.org/blog/hugo-raw-html-shortcode/">Ana Ulin</a> for their raw HTML shortcode example I am now using</p>
+</sub>
+{{< /rawhtml >}}

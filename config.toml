@@ -3,7 +3,7 @@ publishdir    = "public"
 title = "BuyMyMojo"
 copyright = "© BuyMyMojo"
 
-languageCode = "en-au"
+languageCode = "eng"
 theme = "archie"
 metaDataFormat = "yaml"
 

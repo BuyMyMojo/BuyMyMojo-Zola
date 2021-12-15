@@ -7,7 +7,7 @@ slug: proton-and-linux
 author: "Owen Quinlan"
 aliases:
     - /linux/proton-and-linux
-draft: true
+draft: false
 ---
 
 {{<rawhtml>}}

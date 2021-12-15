@@ -10,6 +10,22 @@ aliases:
 draft: false
 ---
 
+<!-- Preset for the link: https://tree.nathanfriend.io/?s=(%27VCs!(%27fancy!Kue~fullPath!false~KailEgSlash!Kue~roHDH!false)~G(%27G%27LEksR3DLSS%20C%20LO*dlss-C-lOXSteam*steamXL7*l7083L7%206*l7-6WFPS%20Q*fps-QWPrHC4prHC-2XNvidia4nvidiaBAMD4amdBIntel4EtelBUJ4uJ-2s5%27)~9siC!%271%27)*%5D%7B((%3C%20ref%20TphHC-and-lO.md%2305R82VmisatiC38%5B4%202*5T%20%3E))%7D6KoubleshoHEg7uKis8%20%209verB-2sXConEinGsource!HotJni9salKtrOEuxQo9layR%5CnT%5C%27VoptiW0%5BX03%01XWVTRQOKJHGECB987654320* -->
+
+<!-- Replace every indent with: &nbsp;&nbsp;&nbsp;&nbsp; -->
+
+Links/  
+├── [DLSS on Linux]({{< ref "photon-and-linux.md#dlss-on-linux" >}})/  
+│&nbsp;&nbsp;&nbsp;&nbsp;├── [Steam]({{< ref "photon-and-linux.md#steam" >}})  
+│&nbsp;&nbsp;&nbsp;&nbsp;└── [Lutris]({{< ref "photon-and-linux.md#lutris" >}})/  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [Lutris troubleshooting]({{< ref "photon-and-linux.md#lutris-troubleshooting" >}})  
+├── [FPS overlay]({{< ref "photon-and-linux.md#fps-overlay" >}})  
+└── [Proton optimisation]({{< ref "photon-and-linux.md#proton-optimisation" >}})/  
+&nbsp;&nbsp;&nbsp;&nbsp;├── [Nvidia optimisation]({{< ref "photon-and-linux.md#nvidia-optimisations" >}})  
+&nbsp;&nbsp;&nbsp;&nbsp;├── [AMD optimisation]({{< ref "photon-and-linux.md#amd-optimisations" >}})  
+&nbsp;&nbsp;&nbsp;&nbsp;├── [Intel optimisation]({{< ref "photon-and-linux.md#intel-optimisations" >}})  
+&nbsp;&nbsp;&nbsp;&nbsp;└── [Universal optimisation]({{< ref "photon-and-linux.md#universal-optimisations" >}})  
+
 {{<rawhtml>}}
 <sub>
 The permalink for this page is <a href="https://buymymojo.net/linux/proton-and-linux">https://buymymojo.net/linux/proton-and-linux</a>, keep that in your bookmarks if you want to check back on this post later!

@@ -6,13 +6,13 @@ variables:
 
 test:
   script:
-  - hugo --config config_pages.toml -D
+  - hugo --config config_pages.toml -D -E -F
   except:
   - master
 
 pages:
   script:
-  - hugo --config config_pages.toml --minify -D
+  - hugo --config config_pages.toml --minify -D -E -F
   artifacts:
     paths:
     - public

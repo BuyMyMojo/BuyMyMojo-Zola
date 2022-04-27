@@ -9,11 +9,15 @@
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
 
+	
+
 	{{- if isset .Site.Params "favicon" -}}
 	<link rel="icon" type="image/png" href={{ .Site.Params.favicon }} />
 	{{- end -}}
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{ with .Params.tags }}<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}, mojo, buymymojo, BuyMyMojo, owen, quinlan">{{ end }}
+	<meta name="author" content="{{ $.Site.Author.name }}">
 	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 	<meta property="og:image" content="{{ .Site.Params.og_image }}"/>
 	{{ with .OutputFormats.Get "rss" -}}
@@ -43,6 +47,8 @@
 		{{ $darkstyle := resources.Get "css/dark.css" | fingerprint }}
 		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="{{ $darkstyle.Permalink }}" {{ if eq .Site.Params.mode "auto" }}media="(prefers-color-scheme: dark)"{{ end }} {{ if eq .Site.Params.mode "toggle" }}disabled{{ end }} />
 	{{ end }}
+
+	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}fontawesome/css/all.min.css">
 	
 	<!-- Custom CSS style get applied last -->
 	{{- if isset .Site.Params "customcss" }}

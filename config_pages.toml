@@ -84,7 +84,7 @@ weight = 2
 [[menu.main]]
 name = "tags"
 title = "Tags"
-url = "tags"
+url = "/tags"
 weight = 3
 
 [[menu.main]]

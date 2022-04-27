@@ -2,7 +2,7 @@
 <hr>
 {{- range $index, $key := .Site.Params.Social -}}
 <a class="soc" rel="me" href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>|
-{{- end -}} ⚡️
+{{- end -}} 🖥️
 	{{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a href="https://github.com/athul/archie">Archie Theme</a>
 </footer>
 {{ if not .Site.IsServer }}

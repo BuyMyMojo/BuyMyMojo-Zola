@@ -8,17 +8,13 @@ author: "Owen Quinlan"
 draft: true
 ---
 
-{{< rawhtml >}}
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-{{< /rawhtml >}}
+{{< load-lottie >}}
 
+{{< load-lottie-int >}}
 
 ## This is a Lottie image:
 
-{{< rawhtml >}}
-<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json"  background="transparent"  speed="1"  style="width: 100%;"  loop controls autoplay></lottie-player>
-{{< /rawhtml >}}
+{{< lottie-player src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json" loop=1 controls=1 autoplay=1 >}}
 
 ## This is the same image as a gif:
 
@@ -56,6 +52,4 @@ LottieInteractivity.create({
 
 The official website has a very simple and easy tool to modify the Lottie's colours to fit your website better, here is one I changed to be sligthly closer to this website's colours:
 
-{{< rawhtml >}}
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wo2kiemb.json"  background="transparent"  speed="1"  style="width: 100%;"  loop controls></lottie-player>
-{{< /rawhtml >}}
+{{< lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wo2kiemb.json" loop=1 controls=1 >}}

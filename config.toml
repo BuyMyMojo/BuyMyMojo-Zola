@@ -56,6 +56,11 @@ keybase = "bmmojo"
     url = "https://social.linux.pizza/@BuyMyMojo"
 
 [[Params.Social]]
+    name = "Tabletop Mastodon"
+    icon = "radio"
+    url = "https://tabletop.social/@BuyMyMojo"
+
+[[Params.Social]]
     name = "Twitter"
     icon = "twitter"
     url = "https://twitter.com/OwenQuinlan7/"

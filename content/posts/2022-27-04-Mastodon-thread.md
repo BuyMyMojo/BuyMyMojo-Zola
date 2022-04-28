@@ -9,6 +9,7 @@ draft: false
 ---
 
 {{< load-lottie >}}
+{{< load-yt >}}
 
 ## Twitter's open source replacements of the future
 

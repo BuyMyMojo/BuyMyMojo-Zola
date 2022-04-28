@@ -31,9 +31,9 @@ Even though it is Decentralised you can access all other communities from whatev
 > Mastodon's official video explaining the platform very clearly and cutely: {{< fa fa="fab fa-youtube" >}}
 {{< youtube id="IPSbNdBmWKE" >}}
 
-Learn more about mastodon and see a list of different communities [here](https://joinmastodon.org)
+Learn more about mastodon and see a list of different communities here: [joinmastodon.org](https://joinmastodon.org)
 
-You can sign up for the official instance [here](https://mstdn.social)
+You can sign up for the official instance here: [mstdn.social](https://mstdn.social)
 
 ## Pixelfed; Instagram but with Twitter's features
 
@@ -43,9 +43,9 @@ Next we have Pixelfed which is more like a mix of Twitter and Instagram with the
 
 Pixelfed is a lot less used then Mastadon but it is still a very nice platform if your primary content is images. Both Mastadon and Pixelfed can communicate with each other because they use the same protocol so you can follow Mastadon accounts on Pixelfed and vice versa.
 
-Learn more about mastodon and see a list of different communities [here](https://pixelfed.org)
+Learn more about mastodon and see a list of different communities here: [pixelfed.org](https://pixelfed.org)
 
-You can sign up for the official instance [here](https://pixelfed.social)
+You can sign up for the official instance[here: [pixelfed.social](https://pixelfed.social)
 
 ### Extras
 

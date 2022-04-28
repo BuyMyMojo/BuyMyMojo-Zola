@@ -28,7 +28,7 @@ Even though it is Decentralised you can access all other communities from whatev
 {{< lottie-player src="https://assets10.lottiefiles.com/packages/lf20_dx5nwnnb.json" speed="0.9" style="width: 100%; border-style: dashed;" loop="1" autoplay="1" >}}
 
 > Mastodon's official video explaining the platform very clearly and cutely: {{< fa fa="fab fa-youtube" >}}
-{{< youtube IPSbNdBmWKE >}}
+{{< youtube id="IPSbNdBmWKE" >}}
 
 Learn more about mastodon and see a list of different communities [here](https://joinmastodon.org)
 
@@ -49,7 +49,7 @@ You can sign up for the official instance [here](https://pixelfed.social)
 ### Extras
 
 > an amazing video explaining Distributed social media and federation: {{< fa fa="fab fa-youtube" >}}
-{{< youtube S57uhCQBEk0 >}}
+{{< youtube id="S57uhCQBEk0" >}}
 
 > links to my own profiles that I made while researching these platforms:
 > 

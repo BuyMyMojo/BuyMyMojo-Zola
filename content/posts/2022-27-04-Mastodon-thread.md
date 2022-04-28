@@ -25,7 +25,7 @@ A lot of Decentralised things in 2022 use Crypto which really isn't a great expe
 
 Even though it is Decentralised you can access all other communities from whatever instance you sign up on.
 
-{{< lottie-player src="https://assets10.lottiefiles.com/packages/lf20_dx5nwnnb.json" speed="0.9" style="width: 100%; border-style: dashed;" loop=1 autoplay=1 >}}
+{{< lottie-player src="https://assets10.lottiefiles.com/packages/lf20_dx5nwnnb.json" speed="0.9" style="width: 100%; border-style: dashed;" loop="1" autoplay="1" >}}
 
 > Mastodon's official video explaining the platform very clearly and cutely: {{< fa fa="fab fa-youtube" >}}
 {{< youtube IPSbNdBmWKE >}}
@@ -38,7 +38,7 @@ You can sign up for the official instance [here](https://mstdn.social)
 
 Next we have Pixelfed which is more like a mix of Twitter and Instagram with the same concepts as Mastadon, federated, open source and decentralised, But with a focus on Photos and images even providing an option to choose the license you want for your images when you post them.
 
-{{< lottie-player src="https://assets8.lottiefiles.com/packages/lf20_0zv8teye.json" mode="bounce" speed="0.8" style="width: 100%; border-style: dashed;" loop=1 autoplay=1 >}}
+{{< lottie-player src="https://assets8.lottiefiles.com/packages/lf20_0zv8teye.json" mode="bounce" speed="0.8" style="width: 100%; border-style: dashed;" loop="1" autoplay="1" >}}
 
 Pixelfed is a lot less used then Mastadon but it is still a very nice platform if your primary content is images. Both Mastadon and Pixelfed can communicate with each other because they use the same protocol so you can follow Mastadon accounts on Pixelfed and vice versa.
 

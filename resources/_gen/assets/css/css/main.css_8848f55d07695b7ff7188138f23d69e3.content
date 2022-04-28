@@ -201,10 +201,6 @@ article .title {
   color: var(--callouctcolor);
 }
 
-.center {
-  text-align: center;
-}
-
 .site-description {
 display: flex;
 justify-content: space-between;

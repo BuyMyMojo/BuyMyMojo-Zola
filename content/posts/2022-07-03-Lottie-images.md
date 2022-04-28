@@ -14,12 +14,12 @@ draft: true
 
 ## This is a Lottie image:
 
-{{< lottie-player src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json" loop=1 controls=1 autoplay=1 >}}
+{{< lottie-player src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json" loop="1" controls="1" autoplay="1" >}}
 
 ## This is the same image as a gif:
 
 {{< rawhtml >}}
-<img src="https://files.buymymojo.net/jb27k3aqhzpv.gif" style="width: 100%;" />
+<img src="https://files.buymymojo.net/jb27k3aqhzpv.gif" style="width: 100%;" decoding="async"/>
 {{< /rawhtml >}}
 
 ## What is the difference?
@@ -52,4 +52,4 @@ LottieInteractivity.create({
 
 The official website has a very simple and easy tool to modify the Lottie's colours to fit your website better, here is one I changed to be sligthly closer to this website's colours:
 
-{{< lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wo2kiemb.json" loop=1 controls=1 >}}
+{{< lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wo2kiemb.json" loop="1" controls="1" >}}

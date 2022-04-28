@@ -9,13 +9,7 @@ author: "Owen Quinlan"
 draft: false
 ---
 
-{{< rawhtml >}}
-<picture>
-    <source type="image/jxl" srcset="/img/vendor/hugo_small.jxl" style="width: 100%;">
-    <source type="image/webp" srcset="/img/vendor/hugo_small.webp" style="width: 100%;">
-    <img src="/img/vendor/hugo_small.png" alt="HUGO logo" style="width: 100%;">
-</picture>
-{{< /rawhtml >}}
+{{< tri-image name="hugo_small" alt="HUGO logo">}}
 
 ## #Learning HUGO was interesting
 
@@ -47,21 +41,9 @@ Pretty simple right?
 
 Adding an image to the preview render has been a pain in my butt :triumph:
 
-{{< rawhtml >}}
-<picture>
-    <source type="image/jxl" srcset="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.jxl" style="width: 100%;">
-    <source type="image/webp" srcset="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.webp" style="width: 100%;">
-    <img src="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.png" alt="Preview of Facebook share" style="width: 100%;">
-</picture>
-{{< /rawhtml >}}
+{{< tri-screencap name="share-preview-20211209-1912" alt="Preview of Facebook share">}}
 
-{{< rawhtml >}}
-<picture>
-    <source type="image/jxl" srcset="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.jxl" style="width: 100%;">
-    <source type="image/webp" srcset="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.webp" style="width: 100%;">
-    <img src="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.png" alt="Preview of Twitter share" style="width: 100%;">
-</picture>
-{{< /rawhtml >}}
+{{< tri-screencap name="share-preview-20211209-1913" alt="Preview of Twitter share">}}
 
 The theme in use on this website provides the ability to have Open Graph tags for each page, a slight issue is that it only allows you to use global image instead of an image for each specific post which is kinda sad.
 

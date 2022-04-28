@@ -31,15 +31,7 @@ By going to `http://localhost:8080/log/{temp}` it saves whatever is after `log/`
 
 By going to `http://localhost:8080/list/` it simple displays all entries as a table for easy checking
 
-{{< rawhtml >}}
-<center>
-<picture>
-    <source type="image/jxl" srcset="/img/screencaps/temp-list-20211213/Screenshot-20211213141012-363x268.jxl" style="width: 50%;">
-    <source type="image/webp" srcset="/img/screencaps/temp-list-20211213/Screenshot-20211213141012-363x268.webp" style="width: 50%;">
-    <img src="/img/screencaps/temp-list-20211213/Screenshot-20211213141012-363x268.png" alt="List of all temps" style="width: 50%;">
-</picture>
-</center>
-{{< /rawhtml >}}
+{{< tri-screencap name="Screenshot-20211213141012-363x268" alt="List of all temps" style="width: 50%;" center="1" >}}
 
 ## Tech
 

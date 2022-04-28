@@ -59,8 +59,8 @@ It might be enabled by default already
 {{< rawhtml >}}
 <a href="/img/screencaps/enable-dlss-lutris/EnableDLSS.gif">
 <picture loading="lazy">
-    <source type="image/webp" srcset="/img/screencaps/enable-dlss-lutris/EnableDLSS.webp" style="width: 100%;" loading="lazy">
-    <img src="/img/screencaps/enable-dlss-lutris/EnableDLSS.gif" alt="HUGO logo" style="width: 100%;" loading="lazy">
+    <source type="image/webp" srcset="/img/screencaps/enable-dlss-lutris/EnableDLSS.webp" style="width: 100%;" loading="lazy" decoding="async">
+    <img src="/img/screencaps/enable-dlss-lutris/EnableDLSS.gif" alt="HUGO logo" style="width: 100%;" loading="lazy" decoding="async">
 </picture>
 </a>
 {{< /rawhtml >}}
@@ -80,7 +80,7 @@ Having a good FPS overlay is always a useful tool.
 The best overlay I've found is [Mangohud](https://github.com/flightlessmango/MangoHud).
 
 {{< rawhtml >}}
-<img src="https://raw.githubusercontent.com/flightlessmango/MangoHud/master/assets/overlay_example.gif" alt="Overlay example" loading="lazy">
+<img src="https://raw.githubusercontent.com/flightlessmango/MangoHud/master/assets/overlay_example.gif" alt="Overlay example" loading="lazy" decoding="async">
 <br>
 <sub> Credit: The Mangohud github page </sub>
 {{< /rawhtml >}}
@@ -88,7 +88,7 @@ The best overlay I've found is [Mangohud](https://github.com/flightlessmango/Man
 The easiest way to configure Mangohud how you'd like it is to use [Goverlay](https://github.com/benjamimgois/goverlay)
 
 {{< rawhtml >}}
-<img src="https://i.ibb.co/QktWGxz/goverlay062-1c.jpg" alt="Goverlay example" loading="lazy">
+<img src="https://i.ibb.co/QktWGxz/goverlay062-1c.jpg" alt="Goverlay example" loading="lazy" decoding="async">
 <br>
 <sub> Credit: The Goverlay github page </sub>
 {{< /rawhtml >}}

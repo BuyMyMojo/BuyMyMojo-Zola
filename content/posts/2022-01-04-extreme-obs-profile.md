@@ -8,17 +8,7 @@ author: "Owen Quinlan"
 draft: true
 ---
 
-{{< rawhtml >}}
-<center>
-<a href="/img/screencaps/obs-nvenc-profile/Profile_Screencap.png">
-<picture>
-    <source type="image/jxl" srcset="/img/screencaps/obs-nvenc-profile/Profile_Screencap.jxl" style="width: 100%;">
-    <source type="image/webp" srcset="/img/screencaps/obs-nvenc-profile/Profile_Screencap.webp" style="width: 100%;">
-    <img src="/img/screencaps/obs-nvenc-profile/Profile_Screencap.png" alt="List of all temps" style="width: 100%;">
-</picture>
-</a>
-</center>
-{{< /rawhtml >}}
+{{< tri-screencap name="Profile_Screencap" alt="List of all temps" >}}
 
 ## What is the point?
 

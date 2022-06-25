@@ -31,7 +31,7 @@ By going to `http://localhost:8080/log/{temp}` it saves whatever is after `log/`
 
 By going to `http://localhost:8080/list/` it simple displays all entries as a table for easy checking
 
-{{< tri-screencap name="Screenshot-20211213141012-363x268" alt="List of all temps" style="width: 50%;" center="1" >}}
+{{< quad-screencap name="Screenshot-20211213141012-363x268" alt="List of all temps" style="width: 50%;" center="1" >}}
 
 ## Tech
 

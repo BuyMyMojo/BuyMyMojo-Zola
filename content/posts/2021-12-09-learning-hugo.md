@@ -9,7 +9,7 @@ author: "Owen Quinlan"
 draft: false
 ---
 
-{{< tri-image name="hugo_small" alt="HUGO logo">}}
+{{< quad-image name="hugo_small" alt="HUGO logo">}}
 
 ## #Learning HUGO was interesting
 
@@ -41,9 +41,9 @@ Pretty simple right?
 
 Adding an image to the preview render has been a pain in my butt :triumph:
 
-{{< tri-screencap name="share-preview-20211209-1912" alt="Preview of Facebook share">}}
+{{< quad-screencap name="share-preview-20211209-1912" alt="Preview of Facebook share">}}
 
-{{< tri-screencap name="share-preview-20211209-1913" alt="Preview of Twitter share">}}
+{{< quad-screencap name="share-preview-20211209-1913" alt="Preview of Twitter share">}}
 
 The theme in use on this website provides the ability to have Open Graph tags for each page, a slight issue is that it only allows you to use global image instead of an image for each specific post which is kinda sad.
 

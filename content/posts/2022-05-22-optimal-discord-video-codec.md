@@ -10,11 +10,7 @@ aliases:
 draft: false
 ---
 
-
-
 So I was measuring the quality and encode time of SVT-AV1 for future use with discord so for the sake of time and quality here is a table!
-
-
 
 The target bitrate for the following video was 1077kb/s
 

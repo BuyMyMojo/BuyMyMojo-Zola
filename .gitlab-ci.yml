@@ -1,20 +1,20 @@
-# All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo:latest
-
+image: alpine:latest
 variables:
+  # This variable will ensure that the CI runner pulls in your theme from the submodule
   GIT_SUBMODULE_STRATEGY: recursive
-
-test:
-  script:
-  - hugo --config config_pages.toml -D -E -F
-  except:
-  - master
 
 pages:
   script:
-  - hugo --config config_pages.toml --minify -D -E -F
+    # Install the zola package from the alpine community repositories
+    - apk add --update-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ zola
+    # Execute zola build
+    - zola build --drafts -u "https://wip.buymymojo.net"
+
   artifacts:
     paths:
-    - public
+      # Path of our artifacts
+      - public
+
+  # This config will only publish changes that are pushed on the master branch
   only:
-  - master
+    - master

@@ -1,0 +1,13 @@
+<!-- tri-image -->
+{% if jpg %}{% set format = "jpg" -%}{% else %}{% set format = "png" -%}{% endif %}
+{% if style %}{% set style = "{{style}}" -%}{% else %}{% set style = "width: 100%;" -%}{% endif %}
+
+{% if name %}
+<a href="/img/{{ format }}/{{ name }}.{{ format }}">
+<picture loading="lazy">
+    <source type="image/jxl" srcset="/img/jxl/{{ name }}.jxl" style="{{ style }}" loading="lazy" decoding="async" >
+    <source type="image/webp" srcset="/img/webp/{{ name }}.webp" style="{{ style }}" loading="lazy" decoding="async" >
+    <img src="/img/{{ format }}/{{ name }}.{{ format }}" {% if alt %} alt="{{ alt }}"{% endif %} class="{% if position %}{{ position }}{% else %} center {%- endif %}" style="{{ style }}" loading="lazy" decoding="async" >
+</picture>
+</a>
+{% endif %}

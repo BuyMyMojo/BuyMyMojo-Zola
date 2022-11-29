@@ -1,6 +1,6 @@
 ![Build Status](https://gitlab.com/BuyMyMojo/buymymojo-hugo/badges/master/pipeline.svg)
 
-# BuyMyMojo website written in go
+# BuyMyMojo website created with Zola(A rust based static site generator)
 
 Main link: https://buymymojo.net
 

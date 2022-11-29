@@ -16,6 +16,14 @@ tags = ["learning", "open-source", "golang"]
 I am now a lot more into rust than go so I haven't explored this topic any further.
 Making an API in rust is actually pretty sweet and I might revisit this topic in rust.
 
+<h1 class="post-title"></h1>
+<sub>Fun thing: to get this line seperating I had to write it as 
+
+```html
+<h1 class="post-title"></h1></code>
+```
+</sub>
+
 ## Why make an API?
 
 In my case it's to log the temp of my pool.

@@ -1,2 +1,0 @@
-<!-- lottie-player -->
-<lottie-player src="{{ .Get "src" }}" {{ with .Get "mode" }}mode="{{ $.Get "mode" }}"{{ else }}{{ end }} {{ with .Get "background" }}background="{{ .Get "background" }}"{{ else }}background="transparent"{{ end }} {{ with .Get "speed" }}speed="{{ $.Get "speed" }}"{{ else }}speed="1.0"{{ end }} {{ with .Get "style" }}style="{{ $.Get "style" | safeCSS }}"{{ else }}style="width: 100%;"{{ end }} {{ if .Get "loop" }}loop{{ else }}{{ end }} {{ if .Get "controls" }}controls{{ else }}{{ end }} {{ if .Get "autoplay" }}autoplay{{ else }}{{ end }}></lottie-player>

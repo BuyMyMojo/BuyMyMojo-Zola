@@ -1,0 +1,4 @@
+{% if src %} 
+<!-- lottie-player -->
+<lottie-player src="{{ src }}" {% if mode %} mode="{{ mode }}"{% endif %} {% if mode %} mode="{{ mode }}"{% endif %} {% if background %} background="{{ background }}"{% else %}background="transparent"{% endif %} {% if speed %}speed="{{ speed }}"{% else %}speed ="1.0"{% endif %} {% if style %} style="{{ style | safe }}" {% else %}style="width: 100%;"{% endif %}  {% if loop %}loop{% endif %} {% if controls %}controls{% endif %} {% if autoplay %}autoplay{% endif %}></lottie-player>
+{% endif %}

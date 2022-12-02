@@ -1,14 +1,13 @@
----
-title: Optimal video encoder for sending on discord
-description: Did some tests comparing AV1, X264 and X265 for quality, bitrate and encode time.
-tags: [Codec, AV1, X264, X265, HEVC, Video, FFMPEG, Encoding]
-date: 2022-05-22T13:40:00+11:00
-slug: optimal-discord-video-codec
-author: "Owen Quinlan"
-aliases:
-  - /experiments/discord-video-codec
-draft: false
----
++++
+title = "Optimal video encoder for sending on discord"
+description = "Did some tests comparing AV1, X264 and X265 for quality, bitrate and encode time."
+date = "2022-05-22"
+slug = "optimal-discord-video-codec"
+draft = false
+
+[taxonomies]
+tags = ["Codec", "AV1", "X264", "X265", "HEVC", "Video", "FFMPEG", "Encoding"]
++++
 
 So I was measuring the quality and encode time of SVT-AV1 for future use with discord so for the sake of time and quality here is a table!
 

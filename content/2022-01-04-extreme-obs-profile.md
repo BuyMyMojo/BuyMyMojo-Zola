@@ -1,12 +1,13 @@
----
-title: Extreme NVENC OBS profile
-description: OBS NVENC video encoding is actually pretty fun!
-tags: [learning, obs, ffmpeg, video, encoding]
-date: 2022-01-04T13:10:00+11:00
-slug: extreme-obs-profile
-author: "Owen Quinlan"
-draft: true
----
++++
+title = "Extreme NVENC OBS profile"
+description = "OBS NVENC video encoding is actually pretty fun!"
+date = "2022-01-04"
+slug = "extreme-obs-profile"
+draft = true
+
+[taxonomies]
+tags = ["learning", "obs", "ffmpeg", "video", "encoding"]
++++
 
 {{< tri-screencap name="Profile_Screencap" alt="List of all temps" >}}
 

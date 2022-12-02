@@ -1,26 +1,26 @@
----
-title: Lottie images
-description: Lottie animated images are an interesting thing
-tags: [learning, obs, ffmpeg, video, encoding]
-date: 2022-03-06T13:05:33+11:00
-slug: lottie-images
-author: "Owen Quinlan"
-draft: true
----
++++
+title = "Lottie images"
+description = "Lottie animated images are an interesting thing"
+date = "2022-03-06"
+slug = "lottie-images"
+draft = true
 
-{{< load-lottie >}}
+[taxonomies]
+tags = ["learning", "obs", "ffmpeg", "video", "encoding"]
++++
 
-{{< load-lottie-int >}}
+{{ loadlottie() }}
+
+{{ loadlottieint() }}
 
 ## This is a Lottie image:
 
-{{< lottie-player src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json" loop="1" controls="1" autoplay="1" >}}
+{{ lottieplayer(src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json", loop="1", controls="1", autoplay="1") }}
 
-## This is the same image as a gif:
+<!-- This image is no longer there, I need to recreate it -->
+<!-- ## This is the same image as a gif:
 
-{{< rawhtml >}}
-<img src="https://files.buymymojo.net/jb27k3aqhzpv.gif" style="width: 100%;" decoding="async"/>
-{{< /rawhtml >}}
+<img src="https://files.buymymojo.net/jb27k3aqhzpv.gif" style="width: 100%;" decoding="async"/> -->
 
 ## What is the difference?
 
@@ -30,8 +30,7 @@ Of course you can't really converting a normal gif to a Lottie because it is on 
 
 Another thing you can do with this file format is easilty animate it based on the scroll of a website, have the animation only play once, have it play at different speeds
 
-{{< rawhtml >}}
-<lottie-player id="firstLottie" src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json" style="width:100%;">"></lottie-player>
+<lottie-player id="firstLottie" src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json" style="width:100%;"></lottie-player>
 
 <script>
 LottieInteractivity.create({
@@ -46,10 +45,9 @@ LottieInteractivity.create({
     ],
 });
 </script>
-{{< /rawhtml >}}
 
 ## Easy customisation
 
 The official website has a very simple and easy tool to modify the Lottie's colours to fit your website better, here is one I changed to be sligthly closer to this website's colours:
 
-{{< lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wo2kiemb.json" loop="1" controls="1" >}}
+{{ lottieplayer(src="https://assets10.lottiefiles.com/packages/lf20_wo2kiemb.json", loop="1", controls="1") }}

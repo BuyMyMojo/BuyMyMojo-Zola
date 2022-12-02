@@ -15,9 +15,9 @@ tags = ["learning", "obs", "ffmpeg", "video", "encoding"]
 
 The reason for this profile is to acieve the highest quality possible using NVENC on the 20xx/30xx Nvidia GPUs
 
-## Settings:
+## Settings
 
-### Video Bitrate:
+### Video Bitrate
 
 I use `45,000 Kbps` average and `80,000 Kbps` max for 1140p60 recording but I will get some more percise numbers for multiple resolutions soon!
 
@@ -27,7 +27,7 @@ You can leave this at double frame rate but for the sake of increasing overal qu
 
 This shouldn't actually change too much but this is meant to be a slight overkill profile.
 
-### Video Encoder:
+### Video Encoder
 
 Here I am using `h264_nvenc` since it is a tried and known codec but these settings should also work for `hevc_nvenc` too if you want.
 
@@ -74,6 +74,3 @@ According to [RGB Spectrum](https://www.rgb.com/h264-profiles#:~:text=High%20Pro
 This changes the preset settings for a bunch of the settings the encoder uses, `p7` is the "slowest" and highest quality mode in the latest versions of FFMPEG and OBS.
 
 Even though it is called the "slowest" it can still get over 100FPS on my 1440p footage when using FFMPEG directly
-
-
-

@@ -17,11 +17,13 @@ I am now a lot more into rust than go so I haven't explored this topic any furth
 Making an API in rust is actually pretty sweet and I might revisit this topic in rust.
 
 <h1 class="post-title"></h1>
-<sub>Fun thing: to get this line seperating I had to write it as 
+<sub>
+Fun thing: to get this line seperating I had to write it as:
 
 ```html
 <h1 class="post-title"></h1></code>
 ```
+
 </sub>
 
 ## Why make an API?
@@ -56,28 +58,28 @@ It's actually extremely simple;
 
 ### /log/
 
-using the [mux](https://github.com/gorilla/mux) http routing library I can easily get the temp variable just by listening to `/log/{temp}` 
+using the [mux](https://github.com/gorilla/mux) http routing library I can easily get the temp variable just by listening to `/log/{temp}`
 
 ```go
     // create a new instance of a mux router
-	r := mux.NewRouter()
+ r := mux.NewRouter()
 
-	// treat anything after /log/ as the temp variable and call handleTemp
-	r.HandleFunc("/log/{temp}", handleTemp)
+ // treat anything after /log/ as the temp variable and call handleTemp
+ r.HandleFunc("/log/{temp}", handleTemp)
 ```
 
 the `handleTemp` function simply returns `200 OK` to the user and calls aother function
 
 ```go
     func handleTemp(w http.ResponseWriter, r *http.Request) {
-	    // read temp from request
-	    vars := mux.Vars(r)
+     // read temp from request
+     vars := mux.Vars(r)
 
-	    // reply with 200 OK
-	    w.WriteHeader(http.StatusOK)
+     // reply with 200 OK
+     w.WriteHeader(http.StatusOK)
 
-	    // log temp
-	    logTemp(vars["temp"])
+     // log temp
+     logTemp(vars["temp"])
     }
 ```
 
@@ -85,15 +87,15 @@ the `handleTemp` function simply returns `200 OK` to the user and calls aother f
 
 ```go
     // Get current date and time
-	dt := time.Now()
+ dt := time.Now()
 
     // Create new record
-	csvTitles := []string{dt.Format("01-02-2006 15:04:05"), temp}
+ csvTitles := []string{dt.Format("01-02-2006 15:04:05"), temp}
 
-	// Append record to CSV
-	if err := w.Write(csvTitles); err != nil {
-		log.Fatalln("error writing record to file", err)
-	}
+ // Append record to CSV
+ if err := w.Write(csvTitles); err != nil {
+  log.Fatalln("error writing record to file", err)
+ }
 ```
 
 ### /list/
@@ -103,11 +105,11 @@ When you go to `/list/` it just lists through the CSV and quickly generates some
 ```go
     htmlResponse := "<html><head><style>table, th, td {\n  border: 1px solid black;\n}</style></head><body><table><tr><th>Date</th><th>Temperature</th></tr>"
 
-	for _, record := range records[1:] {
-		htmlResponse += "<tr><td>" + record[0] + "</td><td>" + record[1] + "</td></tr>"
-	}
+ for _, record := range records[1:] {
+  htmlResponse += "<tr><td>" + record[0] + "</td><td>" + record[1] + "</td></tr>"
+ }
 
-	htmlResponse += "</table></body></html>"
+ htmlResponse += "</table></body></html>"
 ```
 
 ## Conclusion

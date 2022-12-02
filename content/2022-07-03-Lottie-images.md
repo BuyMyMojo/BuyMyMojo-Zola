@@ -13,7 +13,7 @@ tags = ["learning", "obs", "ffmpeg", "video", "encoding"]
 
 {{ loadlottieint() }}
 
-## This is a Lottie image:
+## This is a Lottie image
 
 {{ lottieplayer(src="https://assets5.lottiefiles.com/packages/lf20_mbe3iiji.json", loop="1", controls="1", autoplay="1") }}
 

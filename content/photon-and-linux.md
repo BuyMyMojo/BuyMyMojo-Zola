@@ -39,13 +39,13 @@ To run steam Proton games with dlss you just need to add a couple of launch opti
 
 For DX12 games:
 
-```
+```bash
 PROTON_ENABLE_NVAPI=1 %command%
 ```
 
 For DX11 games (Also use with DX12 if you're having issues):
 
-```
+```bash
 PROTON_HIDE_NVIDIA_GPU=0 PROTON_ENABLE_NVAPI=1 %command%
 ```
 

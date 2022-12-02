@@ -14,11 +14,13 @@ tags = ["learning", "open-source", "hugo"]
 I have now moved over to [Zola](https://www.getzola.org/), A rust based static site generator. It is pretty simalar to hugo but I will eventually make a post like this about Zola and it's differences.
 
 <h1 class="post-title"></h1>
-<sub>Fun thing: to get this line seperating I had to write it as 
+<sub>
+Fun thing: to get this line seperating I had to write it as:
 
 ```html
 <h1 class="post-title"></h1></code>
 ```
+
 </sub>
 
 <!-- nice my first shortcode was pretty easy to bring over to Zola -->
@@ -75,7 +77,7 @@ In this theme if there is a folder `/pages` and a folder `/posts` it will only d
 
 So the current strcture is:
 
-```
+```txt
 buymymojo-hugo/
 ├── archtypes/
 │   └── default.md

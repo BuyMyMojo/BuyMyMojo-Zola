@@ -15,3 +15,5 @@ tags = ["about"]
 My name is Owen Quinlan or more known as BuyMyMojo online.
 
 I am a jr software engineer with many hobys that can be pretty unrelated. This website is for me to explore and write about them.
+
+Now on GitHub pages! <https://wip.buymymojo.net>

@@ -14,5 +14,5 @@ jobs:
           # Target branch
           PAGES_BRANCH: gh-pages
           # Build drafts
-          BUILD_FLAGS: "--drafts -u 'https://wip.buymymojo.net'"
+          BUILD_FLAGS: "--drafts -u https://wip.buymymojo.net"
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

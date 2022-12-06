@@ -53,6 +53,7 @@ menu_items = [
     # see documentation below for more details
     {name = "tags", url = "$BASE_URL/tags"},
     {name = "all posts", url = "$BASE_URL/posts"},
+    {name = "find me", url = "$BASE_URL/find-me"},
     {name = "about me", url = "$BASE_URL/about"},
     
     # set newtab to true to make the link open in new tab

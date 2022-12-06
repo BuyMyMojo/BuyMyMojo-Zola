@@ -3,7 +3,6 @@ title = "About me"
 slug = "about"
 description = "Why you'd want to hang out with me"
 path = "about"
-tags = ["rust", "web"]
 date = "2021-12-09"
 updated = "2022-11-29"
 weight = 0

@@ -22,7 +22,7 @@ Discord Server: <https://discord.gg/gKB7EG629H>
 
 User: [@BuyMyMojo@glitch.lgbt](https://glitch.lgbt/@BuyMyMojo)
 
-### Stream
+### Steam
 
 <https://steamcommunity.com/id/BuyMyMojo/>
 
@@ -80,6 +80,6 @@ Sticker Pack: <https://signal.art/addstickers/#pack_id=29248aa9e56083fd9fe420471
 
 Contact me literally anywhere and tell me! Discord is more prefered tho 🤗
 
-<sub>This is Version 1.0 of this list, I will update this "version" as I change things... just because I feel like it</sub>
+<sub>This is Version 1.1 of this list, I will update this "version" as I change things... just because I feel like it</sub>
 
-<center><sub><strong>Version: 1.0</strong></sub></center>
+<center><sub><strong>Version: 1.1</strong></sub></center>

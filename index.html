@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BuyMyMojo</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://wip.buymymojo.net/style.css">
+    <link rel="stylesheet" href="https://wip.buymymojo.net/color/pink.css">
+
+        <link rel="stylesheet" href="https://wip.buymymojo.net/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://wip.buymymojo.net/font-hack-subset.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@OwenQuinlan7">
+    <meta name="twitter:title" content="BuyMyMojo's place of nerdity">
+
+    <meta name="twitter:description" content="Where else would you go to get nerdy ass content like this!">
+
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;wip.buymymojo.net/img/og-image.png">
+    <!-- Load mastodon embed -->
+    <script type="module" src="https://esm.sh/v99/emfed@1.0.0/es2022/emfed.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/gh/sampsyo/emfed@main/toots.css">
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://wip.buymymojo.net" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            BuyMyMojo
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://wip.buymymojo.net">blog</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/tags">tags</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/posts">all posts</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/find-me">find me</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/about">about me</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    <center><sub>If Venom told you about this site she's full of shit~</sub></center>
+    
+
+    <div class="content">
+        
+        <div class="posts">
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="https://wip.buymymojo.net/optimal-discord-video-codec/">Optimal video encoder for sending on discord</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-05-22
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/codec/">#Codec</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/av1/">#AV1</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/x264/">#X264</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/x265/">#X265</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/hevc/">#HEVC</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/video/">#Video</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/ffmpeg/">#FFMPEG</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/encoding/">#Encoding</a></span>
+    
+
+                    
+        <div class="post-content">
+            <p>So I was measuring the quality and encode time of SVT-AV1 for future use with discord so for the sake of time and quality here is a table!</p>
+<p>The target bitrate for the following video was 1077kb/s</p>
+<table><thead><tr><th>Format (Preset)</th><th>SSIM</th><th>VMAF</th><th>Enc time in seconds</th><th>AVG bitrate</th><th>Score</th></tr></thead><tbody>
+<tr><td>AV1 default (10)</td><td>0.9196</td><td>58.1309</td><td>48.147</td><td>1078bk/s</td><td>1.138</td></tr>
+<tr><td>AV1 (9)</td><td>0.9225</td><td>59.8840</td><td>61.081</td><td>1078kb/s</td><td>0.923</td></tr>
+<tr><td>AV1 (8)</td><td>0.9263</td><td>61.4803</td><td>82.480</td><td>1077kb/s</td><td>0.703</td></tr>
+<tr><td>AV1 (7)</td><td>0.9300</td><td>63.7214</td><td>119.151</td><td>1077kb/s</td><td>0.504</td></tr>
+<tr><td>X264 default (Medium)</td><td>0.8446</td><td>19.7845</td><td>38.068</td><td>1098kb/s</td><td>0.494</td></tr>
+<tr><td>X264 (Slow)</td><td>0.8525</td><td>22.4379</td><td>45.265</td><td>1097kb/s</td><td>0.469</td></tr>
+<tr><td>X264 (Slower)</td><td>0.8559</td><td>22.6277</td><td>117.921</td><td>1097kb/s</td><td>0.182</td></tr>
+<tr><td>HEVC default (Medium)</td><td>0.9062</td><td>49.4559</td><td>86.874</td><td>1103kb/s</td><td>0.526</td></tr>
+<tr><td>HEVC (slow)</td><td>0.9081</td><td>53.3164</td><td>192.364</td><td>1105kb/s</td><td>0.255</td></tr>
+<tr><td>HEVC (slower)</td><td>0.9189</td><td>57.2618</td><td>656.738</td><td>1103kb/s</td><td>0.08</td></tr>
+</tbody></table>
+<div>
+<sub>The score is <quote>(((SSIM + VMAF) / 2) / AVGBitrate / EncTime) * 1000</quote> which is a measurement is more or less amount of quality for a specific file size and time.<br />
+Higher is better.</sub>
+</div>
+<p>The score doesn't directly reflect the quality of the video, VMAF is what you want for that, it reflects how much you would want to use it in a pinch for sending size constrained videos.</p>
+<p>Like even though AV1(7) for the best VMAF score it took double the time as AV1(10) so you'd want to use it less.</p>
+<p>HEVC support wont be added in discord because of licensing but I measured just because I was curious.</p>
+<p>I made this basic &quot;Scoring&quot; system for choosing what settings to use when encoding videos to send on discord.</p>
+<p>These tests where run using my AMD 5600x, there would be different speeds and time for different processors with different thread counts.</p>
+<p>The only setting I changed for any of these encoders was the target bitrate, every other option is FFMPEG's default values.</p>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="https://wip.buymymojo.net/dlss-fsr-exp/">DLSS-FSR experiments</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-05-05
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/dlss/">#DLSS</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/fsr/">#FSR</a></span>
+    
+
+                    
+        <div class="post-content">
+            <h2 id="dlss-fsr-resolution-table">DLSS/FSR Resolution table</h2>
+<p><sub>I run 1440p on my monitors so that will be my main testing resolution</sub></p>
+
+  <figure class="center" >
+    <img src="/img/webp/FSR_DLSS-Res.webp" style="width: 100%;" />
+    
+      <figcaption class="center" style="font-weight: bold; font-style: italic;">A table of some known resolutions</figcaption>
+    
+  </figure>
+
+<!-- The table bellow is the origional code for the table but it broken when converting to zola. -->
+<!-- an archive of the origional post with the table can be found at <https://web.archive.org/web/20221129123333/https://wip.buymymojo.net/posts/2022/05/05/dlss-fsr-experiments/> -->
+<!-- <table>
+  <tbody>
+    <tr>
+      <th class="heading" colspan="15">AMD FSR vs NVIDIA DLSS Resolutions</th>
+    </tr>
+    <tr>
+      <th>BuyMyMojo.net</th>
+      <th>
+        Native<br />
+        Resolution
+      </th>
+      <th>
+        Scale<br />
+        Factor
+      </th>
+      <th></th>
+      <th colspan="2">8192×4320 (8K)</th>
+      <th></th>
+      <th colspan="2">3840×2160 (4K)</th>
+      <th></th>
+      <th colspan="2">2560×1440 (Ours)</th>
+      <th></th>
+      <th colspan="2">1920×1080</th>
+    </tr>
+    <tr>
+      <th colspan="15">NVIDIA DLSS</th>
+    </tr>
+    <tr>
+      <td><strong>Quality</strong></td>
+      <td><strong>66.6%</strong></td>
+      <td><strong>1.50x</strong></td>
+      <th rowspan="4"></th>
+      <td>5461</td>
+      <td>2880</td>
+      <th rowspan="4"></th>
+      <td>2560</td>
+      <td>1440</td>
+      <th rowspan="4"></th>
+      <td>1707</td>
+      <td>960</td>
+      <th rowspan="4"></th>
+      <td>1280</td>
+      <td>720</td>
+    </tr>
+    <tr>
+      <td><strong>Balanced</strong></td>
+      <td><strong>58.0%</strong></td>
+      <td><strong>1.72x</strong></td>
+      <td>4752</td>
+      <td>2506</td>
+      <td>2227</td>
+      <td>1253</td>
+      <td>1485</td>
+      <td>835</td>
+      <td>1114</td>
+      <td>626</td>
+    </tr>
+    <tr>
+      <td><strong>Performance</strong></td>
+      <td><strong>50.0%</strong></td>
+      <td><strong>2.00x</strong></td>
+      <td>4096</td>
+      <td>2160</td>
+      <td>1920</td>
+      <td>1080</td>
+      <td>1280</td>
+      <td>720</td>
+      <td>960</td>
+      <td>540</td>
+    </tr>
+    <tr>
+      <td><strong>Ultra Performance</strong></td>
+      <td><strong>33.3%</strong></td>
+      <td><strong>3.00x</strong></td>
+      <td>2731</td>
+      <td>1440</td>
+      <td>1280</td>
+      <td>720</td>
+      <td>853</td>
+      <td>480</td>
+      <td>640</td>
+      <td>360</td>
+    </tr>
+    <tr>
+      <th colspan="15">AMD FSR</th>
+    </tr>
+    <tr>
+      <td><strong>Ultra Quality&nbsp;</strong></td>
+      <td><strong>77.0%</strong></td>
+      <td><strong>1.30x</strong></td>
+      <th rowspan="4"></th>
+      <td>6302</td>
+      <td>3323</td>
+      <th rowspan="4"></th>
+      <td>2954</td>
+      <td>1662</td>
+      <th rowspan="4"></th>
+      <td>1970</td>
+      <td>1108</td>
+      <th rowspan="4"></th>
+      <td>1970</td>
+      <td>831</td>
+    </tr>
+    <tr>
+      <td><strong>Quality</strong></td>
+      <td><strong>66.6%</strong></td>
+      <td><strong>1.50x</strong></td>
+      <td>5461</td>
+      <td>2880</td>
+      <td>2560</td>
+      <td>1440</td>
+      <td>1706</td>
+      <td>960</td>
+      <td>1706</td>
+      <td>720</td>
+    </tr>
+    <tr>
+      <td><strong>Balanced</strong></td>
+      <td><strong>58.8%</strong></td>
+      <td><strong>1.70x</strong></td>
+      <td>4819</td>
+      <td>1270</td>
+      <td>2259</td>
+      <td>1270</td>
+      <td>1506</td>
+      <td>847</td>
+      <td>1129</td>
+      <td>635</td>
+    </tr>
+    <tr>
+      <td><strong>Performance</strong></td>
+      <td><strong>50.0%</strong></td>
+      <td><strong>2.00x</strong></td>
+      <td>4096</td>
+      <td>2160</td>
+      <td>1920</td>
+      <td>1080</td>
+      <td>1280</td>
+      <td>720</td>
+      <td>960</td>
+      <td>540</td>
+    </tr>
+  </tbody>
+</table> -->
+
+        </div>
+
+                </div>
+            <div class="pagination">
+                <div class="pagination__buttons">
+                    <span class="button next">
+                        <a href="https://wip.buymymojo.net/page/2/">
+                            <span class="button__text">Older posts</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <a class="mastodon-feed" href="https://glitch.lgbt/@BuyMyMojo" data-toot-limit="4">follow me into the Fediverse</a>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2022
+ BuyMyMojo</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>

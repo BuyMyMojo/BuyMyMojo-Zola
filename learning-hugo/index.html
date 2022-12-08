@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BuyMyMojo</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://wip.buymymojo.net/style.css">
+    <link rel="stylesheet" href="https://wip.buymymojo.net/color/pink.css">
+
+        <link rel="stylesheet" href="https://wip.buymymojo.net/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://wip.buymymojo.net/font-hack-subset.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@OwenQuinlan7">
+    <meta name="twitter:title" content="BuyMyMojo's place of nerdity">
+
+    <meta name="twitter:description" content="Where else would you go to get nerdy ass content like this!">
+
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;wip.buymymojo.net/img/og-image.png">
+    <!-- Load mastodon embed -->
+    <script type="module" src="https://esm.sh/v99/emfed@1.0.0/es2022/emfed.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/gh/sampsyo/emfed@main/toots.css">
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://wip.buymymojo.net" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            BuyMyMojo
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://wip.buymymojo.net">blog</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/tags">tags</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/posts">all posts</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/find-me">find me</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/about">about me</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    <center><sub>If Venom told you about this site she's full of shit~</sub></center>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+    <h1 class="post-title"><a href="https://wip.buymymojo.net/learning-hugo/">Learning HUGO</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-12-09
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/learning/">#learning</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/open-source/">#open-source</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/hugo/">#hugo</a></span>
+    
+
+        
+        <div class="post-content">
+            <h2 id="update-2022-11-29">Update! 2022-11-29</h2>
+<p>I have now moved over to <a href="https://www.getzola.org/">Zola</a>, A rust based static site generator. It is pretty simalar to hugo but I will eventually make a post like this about Zola and it's differences.</p>
+<h1 class="post-title"></h1>
+<sub>
+Fun thing: to get this line seperating I had to write it as:
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#bf616a;">h1 </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">post-title</span><span>&quot;&gt;&lt;/</span><span style="color:#bf616a;">h1</span><span>&gt;&lt;/</span><span style="color:#bf616a;">code</span><span>&gt;
+</span></code></pre>
+</sub>
+<!-- nice my first shortcode was pretty easy to bring over to Zola -->
+<!-- tri-image -->
+
+
+
+
+<a href="/img/png/hugo_small.png">
+<picture loading="lazy">
+    <source type="image/jxl" srcset="/img/jxl/hugo_small.jxl" style="width: 100%;" loading="lazy" decoding="async" >
+    <source type="image/webp" srcset="/img/webp/hugo_small.webp" style="width: 100%;" loading="lazy" decoding="async" >
+    <img src="/img/png/hugo_small.png"  alt="HUGO logo" class=" center" style="width: 100%;" loading="lazy" decoding="async" >
+</picture>
+</a>
+<h2 id="learning-hugo-was-interesting">Learning HUGO was interesting</h2>
+<p>So right off the bat I decided to make something <a href="https://shell.buymymojo.net/">less then normal</a> to learn some basics and it was pretty fun, I then moved to actually learning how to create this main website.</p>
+<h3 id="dates-are-weird">Dates are weird</h3>
+<p>A major issue I had while making this very page was adding a date, I tried to give it the date <code>2021-12-09T17:16:00</code> which was the exact time I started to write the page after consulting <a href="https://gitlab.com/HeapUnderflow">Heap</a> about the date issue, They informed me I cannot make dates that are in the future.</p>
+<p>I'm Australian so all my dates are in the futue, I have the UTC offset of +10 but even setting the offset to that <code>2021-12-09T17:16:00+10:00</code> it would still have an issue and not appear on my page, AS IT TURNS OUT I need to tell it I'm half way between east australia and New Zealand and set my UTC offset to +11 <code>2021-12-09T17:16:00+11:00</code></p>
+<p>After that it was smooth sailing, here is the header info from the <code>.md</code> file making up this page:</p>
+<pre data-lang="markdown" style="background-color:#2b303b;color:#c0c5ce;" class="language-markdown "><code class="language-markdown" data-lang="markdown"><span style="background-color:#4f5b66;color:#c0c5ce;">---
+</span><span>title: Learning HUGO
+</span><span>description: HUGO is an interesting tool.
+</span><span>tags:
+</span><span style="color:#bf616a;">- learning
+</span><span style="color:#bf616a;">- open-source
+</span><span style="color:#bf616a;">- code
+</span><span style="color:#bf616a;">date: 2021-12-09T17:16:00+11:00
+</span><span style="color:#bf616a;">slug: learning-hugo
+</span><span style="color:#bf616a;">image: /img/vendor/hugo.svg
+</span><span style="background-color:#4f5b66;color:#c0c5ce;">---
+</span></code></pre>
+<p>Pretty simple right?</p>
+<p>Adding an image to the preview render has been a pain in my butt :triumph:</p>
+<!-- tri-image -->
+
+
+
+
+<a href="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.png">
+<picture loading="lazy">
+    <source type="image/jxl" srcset="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.jxl" style="width: 100%;" loading="lazy" decoding="async" >
+    <source type="image/webp" srcset="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.webp" style="width: 100%;" loading="lazy" decoding="async" >
+    <img src="/img/screencaps/share-preview-20211209-1912/share-preview-20211209-1912.png"  alt="Preview of Facebook share" class=" center" style="width: 100%;" loading="lazy" decoding="async" >
+</picture>
+</a>
+<!-- tri-image -->
+
+
+
+
+<a href="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.png">
+<picture loading="lazy">
+    <source type="image/jxl" srcset="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.jxl" style="width: 100%;" loading="lazy" decoding="async" >
+    <source type="image/webp" srcset="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.webp" style="width: 100%;" loading="lazy" decoding="async" >
+    <img src="/img/screencaps/share-preview-20211209-1913/share-preview-20211209-1913.png"  alt="Preview of Twitter share" class=" center" style="width: 100%;" loading="lazy" decoding="async" >
+</picture>
+</a>
+<p>The theme in use on this website provides the ability to have Open Graph tags for each page, a slight issue is that it only allows you to use global image instead of an image for each specific post which is kinda sad.</p>
+<p>In order to have the image above (Art by <a href="https://twitter.com/Weaveasy">Weaves</a>) I had to set a global image inside of my HUGO config file:</p>
+<pre data-lang="toml" style="background-color:#2b303b;color:#c0c5ce;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[Params]
+</span><span>    </span><span style="color:#bf616a;">og_image </span><span>= &quot;</span><span style="color:#a3be8c;">https://wip.buymymojo.net/img/og-image.png</span><span>&quot;
+</span></code></pre>
+<p>I'm going to put a request into the theme's repo for support for a per post image but ofc if it doesnt add it that's fine. It's an open source theme for an open source tool, if I eventually learn HUGO more intametly I will make my own fork and link it here!</p>
+<h4 id="one-final-hiccup">One final hiccup</h4>
+<p>In this theme if there is a folder <code>/pages</code> and a folder <code>/posts</code> it will only display the posts inside of <code>/pages</code> on the front page, if you remove it then it shows the files in <code>/pages</code> so I've moved to only using the pages folder</p>
+<p>So the current strcture is:</p>
+<pre data-lang="txt" style="background-color:#2b303b;color:#c0c5ce;" class="language-txt "><code class="language-txt" data-lang="txt"><span>buymymojo-hugo/
+</span><span>├── archtypes/
+</span><span>│   └── default.md
+</span><span>├── content/
+</span><span>│   └── posts/
+</span><span>│       ├── 2021-12-09-learning-hugo.md
+</span><span>│       └── about.md
+</span><span>├── static/
+</span><span>│   ├── img/
+</span><span>│   │   ├── screencaps/
+</span><span>│   │   │   ├── share-preview-20211209-1912.png
+</span><span>│   │   │   └── share-preview-20211209-191348.png
+</span><span>│   │   ├── vendor/
+</span><span>│   │   │   ├── hugo.png
+</span><span>│   │   │   └── hugo.svg
+</span><span>│   │   └── og-image.png
+</span><span>│   ├── android-chrome-192x192.png
+</span><span>│   ├── android-chrome-512x512.png
+</span><span>│   ├── apple-touch-icon.png
+</span><span>│   ├── favicon-16x16.png
+</span><span>│   ├── favicon-32x32.png
+</span><span>│   ├── favicon.ico
+</span><span>│   └── site.webmanifest
+</span><span>├── themes/
+</span><span>│   └── archie
+</span><span>├── .gitignore
+</span><span>├── .gitlab-ci.yml
+</span><span>├── config_pages.toml
+</span><span>├── config.toml
+</span><span>├── LICENSE
+</span><span>└── README.md
+</span></code></pre>
+<p>Go check out the <a href="https://gitlab.com/BuyMyMojo/buymymojo-hugo">source for this website</a> and the <a href="https://github.com/athul/archie">theme used here</a></p>
+<sub>
+<p>Credit to <a href="https://anaulin.org/blog/hugo-raw-html-shortcode/">Ana Ulin</a> for their raw HTML shortcode example I am now using</p>
+</sub>
+
+        </div>
+
+        
+        <div class="pagination">
+            <div class="pagination__title">
+                <span class="pagination__title-h">Thanks for reading! Read other posts?</span>
+                <hr />
+            </div>
+            <div class="pagination__buttons">
+                
+                    <span class="button next">
+                        <a href="https://wip.buymymojo.net/making-an-api-in-go/">
+                            <span class="button__text">Making an API in Go</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                </div>
+        </div>
+    
+    </div>
+
+    </div>
+
+    <a class="mastodon-feed" href="https://glitch.lgbt/@BuyMyMojo" data-toot-limit="4">follow me into the Fediverse</a>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2022
+ BuyMyMojo</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>

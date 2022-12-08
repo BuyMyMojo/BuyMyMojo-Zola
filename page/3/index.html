@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BuyMyMojo</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://wip.buymymojo.net/style.css">
+    <link rel="stylesheet" href="https://wip.buymymojo.net/color/pink.css">
+
+        <link rel="stylesheet" href="https://wip.buymymojo.net/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://wip.buymymojo.net/font-hack-subset.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@OwenQuinlan7">
+    <meta name="twitter:title" content="BuyMyMojo's place of nerdity">
+
+    <meta name="twitter:description" content="Where else would you go to get nerdy ass content like this!">
+
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;wip.buymymojo.net/img/og-image.png">
+    <!-- Load mastodon embed -->
+    <script type="module" src="https://esm.sh/v99/emfed@1.0.0/es2022/emfed.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/gh/sampsyo/emfed@main/toots.css">
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://wip.buymymojo.net" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            BuyMyMojo
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://wip.buymymojo.net">blog</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/tags">tags</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/posts">all posts</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/find-me">find me</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/about">about me</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    <center><sub>If Venom told you about this site she's full of shit~</sub></center>
+    
+
+    <div class="content">
+        
+        <div class="posts">
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="https://wip.buymymojo.net/extreme-obs-profile/">Extreme NVENC OBS profile</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-01-04
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/learning/">#learning</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/obs/">#obs</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/ffmpeg/">#ffmpeg</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/video/">#video</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/encoding/">#encoding</a></span>
+    
+
+                    
+        <div class="post-content">
+            <p>{{&lt; tri-screencap name=&quot;Profile_Screencap&quot; alt=&quot;List of all temps&quot; &gt;}}</p>
+<h2 id="what-is-the-point">What is the point?</h2>
+<p>The reason for this profile is to acieve the highest quality possible using NVENC on the 20xx/30xx Nvidia GPUs</p>
+<h2 id="settings">Settings</h2>
+<h3 id="video-bitrate">Video Bitrate</h3>
+<p>I use <code>45,000 Kbps</code> average and <code>80,000 Kbps</code> max for 1140p60 recording but I will get some more percise numbers for multiple resolutions soon!</p>
+<h3 id="keyframe-interval">Keyframe interval</h3>
+<p>You can leave this at double frame rate but for the sake of increasing overal quality slighty I did <code>115</code> instead of <code>120</code>.</p>
+<p>This shouldn't actually change too much but this is meant to be a slight overkill profile.</p>
+<h3 id="video-encoder">Video Encoder</h3>
+<p>Here I am using <code>h264_nvenc</code> since it is a tried and known codec but these settings should also work for <code>hevc_nvenc</code> too if you want.</p>
+<p>I'll try to get some more specific quality numbers for this too!</p>
+<h3 id="video-encoder-settings">Video Encoder Settings</h3>
+<p>Now here is some special sauce! My settings are a modified version of <a href="https://www.xaymar.com/guides/obs/high-quality-streaming-nvenc/">Xaymar's OBS streaming settings</a> </p>
+<p><sub>This post was made after he started to move his website to the new style, as of writing his <a href="https://www.xaymar.com/guides/obs/high-quality-recording/">Recording settings</a> aren't avaliable<sub></p>
+<h4 id="2pass"><code>2pass</code></h4>
+<p>The use of <code>2pass</code> is based of Xaymar's recomendations for Turing &amp; Ampere cards but this will be further explored during my quality testing.</p>
+<p>I know it is more useful in a Streaming situation since it helps keep the bitrate more consistent but according to the <a href="https://trac.ffmpeg.org/wiki/Encode/H.264#twopass">FFMPEG website</a> it can lower the quality some what?</p>
+<h4 id="multipass"><code>multipass</code></h4>
+<p>This option is NVENC specific and is similar to <code>2pass</code> but helps the NVENC encoder decide how to distribute the bitrate across the from and how many bits it will require as well and let's the encoder decide what QP level to use for parts of the frame</p>
+<p>This has two modes; <code>first pass in quarter resolution and second pass in full resolution</code> and <code>both passes in full resolution</code></p>
+<p>According to the <a href="https://docs.nvidia.com/video-technologies/video-codec-sdk/nvenc-video-encoder-api-prog-guide/#multi-pass-frame-phencoding">Nvidia docs</a> full resolution mode generates better stats for the second pass but the quater resolution mode gets larger motion vectors which can posibly help with objects that move across the screen faster(?). As with all things in this post I will look into it more when i do proper quality testing.</p>
+<h4 id="spatial-aq-temporal-aq"><code>spatial-aq</code> &amp; <code>temporal-aq</code></h4>
+<p>The <code>spatial-aq</code> option helps the NVENC encoder use it's bitrate more efficiently in places that need details instead of areas that dont actually have any detail</p>
+<p>The <a href="https://docs.nvidia.com/video-technologies/video-codec-sdk/nvenc-video-encoder-api-prog-guide/#spatial-aq">Nvidia docs</a> say <code>the required bit redistribution results in PSNR drop in most of the cases.</code> which makes sense but is good to keep in mind when looking for quality mterics, when testing later I will use SSIM and VMAF scores to gague quality!</p>
+<p>The <code>temporal-aq</code> options checks through the frames within the <code>rc-lookahead</code> area to see what ones of those frames require bitrate more compared to the others</p>
+<h4 id="rc-lookahead"><code>rc-lookahead</code></h4>
+<p><code>rc-lookahead</code> improves the overal quality of the video by allowing the encoder to look over the buffered frames to estimate the complexity of the frames to more efficiently distrabute the bitrate and to also allocate B and P frames</p>
+<h4 id="profile"><code>profile</code></h4>
+<p>According to <a href="https://www.rgb.com/h264-profiles#:~:text=High%20Profile-,H.,ratio%20of%20about%202000%3A1.">RGB Spectrum</a> the High profile is the most efficient profile, I'm pretty sure this just decides default settings for the actual h264 format(?)</p>
+<h3 id="preset"><code>preset</code></h3>
+<p>This changes the preset settings for a bunch of the settings the encoder uses, <code>p7</code> is the &quot;slowest&quot; and highest quality mode in the latest versions of FFMPEG and OBS.</p>
+<p>Even though it is called the &quot;slowest&quot; it can still get over 100FPS on my 1440p footage when using FFMPEG directly</p>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="https://wip.buymymojo.net/proton-and-linux/">proton and linux gaming things [V1.0]</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2021-12-15
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/linux/">#linux</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/gaming/">#gaming</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/proton/">#proton</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/wine/">#wine</a></span>
+    
+
+                    
+        <div class="post-content">
+            <sub>
+The permalink for this page is <a href="https://buymymojo.net/linux/proton-and-linux">https://buymymojo.net/linux/proton-and-linux</a>, keep that in your bookmarks if you want to check back on this post later!
+</sub>
+<h2 id="dlss-on-linux">DLSS on linux</h2>
+<p>So first of all I do use nvidia GPUs for a few reasons, DLSS and NVENC being a couple so here is a quick guide on how to use DLSS on linux:</p>
+<h3 id="steam">Steam</h3>
+<p>To run steam Proton games with dlss you just need to add a couple of launch options:</p>
+<p>For DX12 games:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">PROTON_ENABLE_NVAPI</span><span>=</span><span style="color:#a3be8c;">1 </span><span>%</span><span style="color:#bf616a;">command</span><span>%
+</span></code></pre>
+<p>For DX11 games (Also use with DX12 if you're having issues):</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">PROTON_HIDE_NVIDIA_GPU</span><span>=</span><span style="color:#a3be8c;">0 </span><span style="color:#bf616a;">PROTON_ENABLE_NVAPI</span><span>=</span><span style="color:#a3be8c;">1 </span><span>%</span><span style="color:#bf616a;">command</span><span>%
+</span></code></pre>
+<h3 id="lutris">Lutris</h3>
+<p>To run Lutris games with dlss it is a very simple toggle!</p>
+<p>Right click the game &gt; <code>Config</code> &gt; <code>Runner options</code> tab &gt; <code>Enable DXVK-NVAPI / DLSS</code></p>
+<p>It might be enabled by default already</p>
+<a href="/img/screencaps/enable-dlss-lutris/EnableDLSS.gif">
+<picture loading="lazy">
+    <source type="image/webp" srcset="/img/screencaps/enable-dlss-lutris/EnableDLSS.webp" style="width: 100%;" loading="lazy" decoding="async">
+    <img src="/img/screencaps/enable-dlss-lutris/EnableDLSS.gif" alt="HUGO logo" style="width: 100%;" loading="lazy" decoding="async">
+</picture>
+</a>
+<h4 id="lutris-troubleshooting">Lutris troubleshooting</h4>
+<p>I had an issue where <code>Cyberpunk 2077</code> wouldnt let me enable dlss after this feature was added, if you have an issue where you ran the game without DLSS enabled and now it wont let you enable it at all then this might fix it for you;</p>
+<ol>
+<li>go to the game's files
+<ul>
+<li>in my case it was in <code>~/Games/cyberpunk2077/drive_c/GOG Games/Cyberpunk 2077/</code></li>
+</ul>
+</li>
+<li>delte the <code>d3d11.log</code> and <code>dxgi.log</code> files.
+<ul>
+<li>For me the files where named <code>Cyberpunk2077_d3d11.log</code> and <code>Cyberpunk2077_dxgi.log</code> so the file might have the games name in it for you too.</li>
+</ul>
+</li>
+<li>Enable DLSS and run again</li>
+</ol>
+<h2 id="fps-overlay">FPS overlay</h2>
+<p>Having a good FPS overlay is always a useful tool.</p>
+<p>The best overlay I've found is <a href="https://github.com/flightlessmango/MangoHud">Mangohud</a>.</p>
+<img src="https://raw.githubusercontent.com/flightlessmango/MangoHud/master/assets/overlay_example.gif" alt="Overlay example" loading="lazy" decoding="async">
+<br>
+<sub> Credit: The Mangohud github page </sub>
+<p>The easiest way to configure Mangohud how you'd like it is to use <a href="https://github.com/benjamimgois/goverlay">Goverlay</a></p>
+<img src="https://i.ibb.co/QktWGxz/goverlay062-1c.jpg" alt="Goverlay example" loading="lazy" decoding="async">
+<br>
+<sub> Credit: The Goverlay github page </sub>
+<h2 id="proton-optimisation">Proton optimisation</h2>
+<p>While a lot of games run with equal to or greater then windows performance now there are always some optimisations to make the experince more smooth. Hopefully in the future devs will provide presets for these on linux with the launch of the steam deck</p>
+<h3 id="nvidia-optimisations">Nvidia optimisations</h3>
+<p>I did say that I run an Nvidia card so this will be my starting point.</p>
+<ul>
+<li><code>__GL_THREADED_OPTIMIZATION=1</code>
+<ul>
+<li>For OpenGL games this can give a performance boost.</li>
+</ul>
+</li>
+<li><code>__GL_SHADER_DISK_CACHE=1</code>
+<ul>
+<li>This will cache shaders as they are compiled so the gpu doesnt need to compile them again. Not all games need this but it can reduce stuttering more and more as you play.</li>
+</ul>
+</li>
+<li><code>__GL_SHADER_DISK_CACHE_PATH=/path/to/location</code>
+<ul>
+<li>This sets the location for the shader cache. I typically just put a <code>/cache</code> folder inside my game's folder.</li>
+</ul>
+</li>
+</ul>
+<h3 id="amd-optimisations">AMD optimisations</h3>
+<p>I dont have an AMD card to test any of these on so refer to <a href="https://www.protondb.com/help/improving-performance">the ProtonDB page</a> for more info</p>
+<ul>
+<li>Install Mesa drivers for AMD cards
+<ul>
+<li>Refer to the DB page</li>
+<li>Using a mesa drive past version 19.3 will let steam use their newer <a href="https://steamcommunity.com/games/221410/announcements/detail/1602634609636894200">ACO</a> shader compiler</li>
+</ul>
+</li>
+<li><code>mesa_glthread=true</code>
+<ul>
+<li>Like <code>__GL_THREADED_OPTIMIZATION=1</code> but for AMD</li>
+</ul>
+</li>
+</ul>
+<h3 id="intel-optimisations">Intel Optimisations</h3>
+<p>There arent any dedicated Intel GPUs in the wild for gaming yet, silly.</p>
+<p>I will update this section when we get some actual information about them!</p>
+<h3 id="universal-optimisations">Universal optimisations</h3>
+<p>These are some optimisations that work on all GPU providers</p>
+<ul>
+<li><a href="https://github.com/FeralInteractive/gamemode">Feral Gamemode</a>
+<ul>
+<li>This is a tool made by Feral Interactive, They have ported games like <code>Total War: ROME REMASTERED</code>, <code>Shadow of the Tomb Raider</code> and <code>Life is Strange: Before the Storm</code> to linux!</li>
+<li>The tweaks in this tool are typically already active in their own games but adding this to other Proton games can provide further performance imporovements in CPU limited situations</li>
+<li>It can be installed via your package manager of built using their git repo</li>
+<li>Add it to your steam game launch options like so: <code>gamemoderun %command%</code></li>
+<li>There is a toggle for this inside of Lutris too!</li>
+</ul>
+</li>
+<li>Custom Proton/Wine builds
+<ul>
+<li><a href="https://github.com/GloriousEggroll/proton-ge-custom">GloriousEggroll Proton</a> this version typically provides extra fixes onto the current experimental version of Proton</li>
+<li><a href="https://github.com/GloriousEggroll/wine-ge-custom">GloriousEggroll Wine</a> these are basically the game builds but for use with Lutris or just to run normal Windows software</li>
+</ul>
+</li>
+</ul>
+<br>
+<sub>
+Credits: <br>
+GamingOnLinux; I found the <a href="https://www.gamingonlinux.com/2021/10/proton-experimental-expands-nvidia-dlss-support-on-linux-to-directx-11-titles/">DX11</a> and <a href="https://www.gamingonlinux.com/2021/10/steam-play-proton-63-7-is-out-now-proton-experimental-gets-dlss-for-dx12-games-on-linux/">DX12</a> steam launch options here <br>
+ProtonDB; got some optimisation tips from their <a href="https://www.protondb.com/help/improving-performance">Performance</a> page
+
+        </div>
+
+                </div>
+            <div class="pagination">
+                <div class="pagination__buttons">
+                    <span class="button previous">
+                        <a href="https://wip.buymymojo.net/page/2/">
+                            <span class="button__icon">←</span>&nbsp;
+                            <span class="button__text">Newer posts</span>
+                        </a>
+                    </span>
+                
+                    <span class="button next">
+                        <a href="https://wip.buymymojo.net/page/4/">
+                            <span class="button__text">Older posts</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <a class="mastodon-feed" href="https://glitch.lgbt/@BuyMyMojo" data-toot-limit="4">follow me into the Fediverse</a>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2022
+ BuyMyMojo</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>

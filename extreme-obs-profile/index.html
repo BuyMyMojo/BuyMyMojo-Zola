@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BuyMyMojo</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://wip.buymymojo.net/style.css">
+    <link rel="stylesheet" href="https://wip.buymymojo.net/color/pink.css">
+
+        <link rel="stylesheet" href="https://wip.buymymojo.net/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://wip.buymymojo.net/font-hack-subset.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@OwenQuinlan7">
+    <meta name="twitter:title" content="BuyMyMojo's place of nerdity">
+
+    <meta name="twitter:description" content="Where else would you go to get nerdy ass content like this!">
+
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;wip.buymymojo.net/img/og-image.png">
+    <!-- Load mastodon embed -->
+    <script type="module" src="https://esm.sh/v99/emfed@1.0.0/es2022/emfed.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/gh/sampsyo/emfed@main/toots.css">
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://wip.buymymojo.net" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            BuyMyMojo
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://wip.buymymojo.net">blog</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/tags">tags</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/posts">all posts</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/find-me">find me</a></li>
+            
+                <li><a href="https://wip.buymymojo.net/about">about me</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    <center><sub>If Venom told you about this site she's full of shit~</sub></center>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+    <h1 class="post-title"><a href="https://wip.buymymojo.net/extreme-obs-profile/">Extreme NVENC OBS profile</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-01-04
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/learning/">#learning</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/obs/">#obs</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/ffmpeg/">#ffmpeg</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/video/">#video</a>&nbsp;
+                <a class="post-tag" href="https://wip.buymymojo.net/tags/encoding/">#encoding</a></span>
+    
+
+        
+        <div class="post-content">
+            <p>{{&lt; tri-screencap name=&quot;Profile_Screencap&quot; alt=&quot;List of all temps&quot; &gt;}}</p>
+<h2 id="what-is-the-point">What is the point?</h2>
+<p>The reason for this profile is to acieve the highest quality possible using NVENC on the 20xx/30xx Nvidia GPUs</p>
+<h2 id="settings">Settings</h2>
+<h3 id="video-bitrate">Video Bitrate</h3>
+<p>I use <code>45,000 Kbps</code> average and <code>80,000 Kbps</code> max for 1140p60 recording but I will get some more percise numbers for multiple resolutions soon!</p>
+<h3 id="keyframe-interval">Keyframe interval</h3>
+<p>You can leave this at double frame rate but for the sake of increasing overal quality slighty I did <code>115</code> instead of <code>120</code>.</p>
+<p>This shouldn't actually change too much but this is meant to be a slight overkill profile.</p>
+<h3 id="video-encoder">Video Encoder</h3>
+<p>Here I am using <code>h264_nvenc</code> since it is a tried and known codec but these settings should also work for <code>hevc_nvenc</code> too if you want.</p>
+<p>I'll try to get some more specific quality numbers for this too!</p>
+<h3 id="video-encoder-settings">Video Encoder Settings</h3>
+<p>Now here is some special sauce! My settings are a modified version of <a href="https://www.xaymar.com/guides/obs/high-quality-streaming-nvenc/">Xaymar's OBS streaming settings</a> </p>
+<p><sub>This post was made after he started to move his website to the new style, as of writing his <a href="https://www.xaymar.com/guides/obs/high-quality-recording/">Recording settings</a> aren't avaliable<sub></p>
+<h4 id="2pass"><code>2pass</code></h4>
+<p>The use of <code>2pass</code> is based of Xaymar's recomendations for Turing &amp; Ampere cards but this will be further explored during my quality testing.</p>
+<p>I know it is more useful in a Streaming situation since it helps keep the bitrate more consistent but according to the <a href="https://trac.ffmpeg.org/wiki/Encode/H.264#twopass">FFMPEG website</a> it can lower the quality some what?</p>
+<h4 id="multipass"><code>multipass</code></h4>
+<p>This option is NVENC specific and is similar to <code>2pass</code> but helps the NVENC encoder decide how to distribute the bitrate across the from and how many bits it will require as well and let's the encoder decide what QP level to use for parts of the frame</p>
+<p>This has two modes; <code>first pass in quarter resolution and second pass in full resolution</code> and <code>both passes in full resolution</code></p>
+<p>According to the <a href="https://docs.nvidia.com/video-technologies/video-codec-sdk/nvenc-video-encoder-api-prog-guide/#multi-pass-frame-phencoding">Nvidia docs</a> full resolution mode generates better stats for the second pass but the quater resolution mode gets larger motion vectors which can posibly help with objects that move across the screen faster(?). As with all things in this post I will look into it more when i do proper quality testing.</p>
+<h4 id="spatial-aq-temporal-aq"><code>spatial-aq</code> &amp; <code>temporal-aq</code></h4>
+<p>The <code>spatial-aq</code> option helps the NVENC encoder use it's bitrate more efficiently in places that need details instead of areas that dont actually have any detail</p>
+<p>The <a href="https://docs.nvidia.com/video-technologies/video-codec-sdk/nvenc-video-encoder-api-prog-guide/#spatial-aq">Nvidia docs</a> say <code>the required bit redistribution results in PSNR drop in most of the cases.</code> which makes sense but is good to keep in mind when looking for quality mterics, when testing later I will use SSIM and VMAF scores to gague quality!</p>
+<p>The <code>temporal-aq</code> options checks through the frames within the <code>rc-lookahead</code> area to see what ones of those frames require bitrate more compared to the others</p>
+<h4 id="rc-lookahead"><code>rc-lookahead</code></h4>
+<p><code>rc-lookahead</code> improves the overal quality of the video by allowing the encoder to look over the buffered frames to estimate the complexity of the frames to more efficiently distrabute the bitrate and to also allocate B and P frames</p>
+<h4 id="profile"><code>profile</code></h4>
+<p>According to <a href="https://www.rgb.com/h264-profiles#:~:text=High%20Profile-,H.,ratio%20of%20about%202000%3A1.">RGB Spectrum</a> the High profile is the most efficient profile, I'm pretty sure this just decides default settings for the actual h264 format(?)</p>
+<h3 id="preset"><code>preset</code></h3>
+<p>This changes the preset settings for a bunch of the settings the encoder uses, <code>p7</code> is the &quot;slowest&quot; and highest quality mode in the latest versions of FFMPEG and OBS.</p>
+<p>Even though it is called the &quot;slowest&quot; it can still get over 100FPS on my 1440p footage when using FFMPEG directly</p>
+
+        </div>
+
+        
+        <div class="pagination">
+            <div class="pagination__title">
+                <span class="pagination__title-h">Thanks for reading! Read other posts?</span>
+                <hr />
+            </div>
+            <div class="pagination__buttons">
+                    <span class="button previous">
+                        <a href="https://wip.buymymojo.net/proton-and-linux/">
+                            <span class="button__icon">←</span>&nbsp;
+                            <span class="button__text">proton and linux gaming things [V1.0]</span>
+                        </a>
+                    </span>
+                
+                
+                    <span class="button next">
+                        <a href="https://wip.buymymojo.net/lottie-images/">
+                            <span class="button__text">Lottie images</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                </div>
+        </div>
+    
+    </div>
+
+    </div>
+
+    <a class="mastodon-feed" href="https://glitch.lgbt/@BuyMyMojo" data-toot-limit="4">follow me into the Fediverse</a>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2022
+ BuyMyMojo</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>

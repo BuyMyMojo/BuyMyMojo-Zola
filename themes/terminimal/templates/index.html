@@ -7,6 +7,7 @@
 <html lang="{%- if config.default_language -%}{{ config.default_language }}{%- else -%}en{%- endif -%}">
 
 <head>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <title>{%- block title %}{{ config.title }}{% endblock title -%}</title>
     {{ head_macros::head(config=config) }}
 
@@ -26,10 +27,7 @@
     <meta name="twitter:description" content="Where else would you go to get nerdy ass content like this!">
 
     <meta name="twitter:image" content="{{ config.base_url }}/img/og-image.png">
-    <!-- Load mastodon embed -->
-    <script type="module" src="https://esm.sh/v99/emfed@1.0.0/es2022/emfed.js"></script>
-    <link rel="stylesheet" type="text/css"
-      href="https://cdn.jsdelivr.net/gh/sampsyo/emfed@main/toots.css">
+
     {% endblock extra_head -%}
 
 </head>
@@ -104,8 +102,6 @@
         </div>
         {% endblock content %}
     </div>
-
-    <a class="mastodon-feed" href="https://glitch.lgbt/@BuyMyMojo" data-toot-limit="4">follow me into the Fediverse</a>
 
     {% block footer %}
     <footer class="footer">

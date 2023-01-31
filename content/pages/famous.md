@@ -8,7 +8,7 @@ weight = 0
 +++
 
 <center>
-<h1 style="font-size: 5vw;">You aer cute as frick!</h1>
+<h1 style="font-size: 5vw;">You are cute as frick!</h1>
 
 <sub>Especially you two, Sadie and Venom!</sub>
 </center>

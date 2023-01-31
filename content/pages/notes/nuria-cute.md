@@ -6,7 +6,7 @@ path = "notes/nuria-cute"
 updated = "2023-01-31"
 weight = 0
 +++
-<table>
+<!-- <table>
     <tr>
         <td>
             <center>
@@ -67,4 +67,4 @@ weight = 0
     </tr>
 </table>
 
-<br />
+<br /> -->

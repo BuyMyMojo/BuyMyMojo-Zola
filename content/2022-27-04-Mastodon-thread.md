@@ -51,7 +51,7 @@ You can sign up for the official instance[here: [pixelfed.social](https://pixelf
 
 > an amazing video explaining Distributed social media and federation: {{< fa fa="fab fa-youtube" >}}
 
-{{ youtube(id="S57uhCQBEk0") }}
+<center>{{ youtube(id="S57uhCQBEk0") }}</center>
 
 > links to my own profiles that I made while researching these platforms:
 >
